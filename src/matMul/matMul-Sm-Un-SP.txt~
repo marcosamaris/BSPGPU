@@ -1,0 +1,447 @@
+==18075== NVPROF is profiling process 18075, command: ./matMul-Sm-Un 128 1
+==18075== Warning: Event "fb_subp1_write_sectors" cannot be found on device 1
+==18075== Warning: Event "inst_issued1" cannot be found on device 1
+==18075== Warning: Event "l2_subp0_write_l1_sector_queries" cannot be found on device 1
+==18075== Warning: Event "l1_shared_load_transactions" cannot be found on device 1
+==18075== Warning: Event "l2_subp2_write_sector_misses" cannot be found on device 1
+==18075== Warning: Event "l2_subp1_read_l1_hit_sectors" cannot be found on device 1
+==18075== Warning: Event "l2_subp3_write_l1_sector_queries" cannot be found on device 1
+==18075== Warning: Event "l2_subp2_write_l1_sector_queries" cannot be found on device 1
+==18075== Warning: Event "__l1_global_store_transactions" cannot be found on device 1
+==18075== Warning: Event "l2_subp2_write_sysmem_sector_queries" cannot be found on device 1
+==18075== Warning: Event "ld_inst_8bit" cannot be found on device 1
+==18075== Warning: Event "l2_subp2_read_sector_misses" cannot be found on device 1
+==18075== Warning: Event "tex3_cache_sector_queries" cannot be found on device 1
+==18075== Warning: Event "local_store_transactions" cannot be found on device 1
+==18075== Warning: Event "l2_subp3_read_l1_hit_sectors" cannot be found on device 1
+==18075== Warning: Event "l2_subp2_total_read_sector_queries" cannot be found on device 1
+==18075== Warning: Event "l2_subp3_write_sysmem_sector_queries" cannot be found on device 1
+==18075== Warning: Event "l2_subp3_read_tex_hit_sectors" cannot be found on device 1
+==18075== Warning: Event "shared_load_replay" cannot be found on device 1
+==18075== Warning: Event "l2_subp1_read_l1_sector_queries" cannot be found on device 1
+==18075== Warning: Event "__l1_global_load_transactions" cannot be found on device 1
+==18075== Warning: Event "b_subp0_read_sectors" cannot be found on device 1
+==18075== Warning: Event "l2_subp2_read_l1_sector_queries" cannot be found on device 1
+==18075== Warning: Event "l2_subp3_total_read_sector_queries" cannot be found on device 1
+==18075== Warning: Event "local_load_transactions" cannot be found on device 1
+==18075== Warning: Event "l1_shared_store_transactions" cannot be found on device 1
+==18075== Warning: Event "l2_subp2_read_tex_hit_sectors" cannot be found on device 1
+==18075== Warning: Event "fb_subp0_write_sectors" cannot be found on device 1
+==18075== Warning: Event "l2_subp2_read_tex_sector_queries" cannot be found on device 1
+==18075== Warning: Event "l2_subp0_read_l1_sector_queries" cannot be found on device 1
+==18075== Warning: Event "tex3_cache_sector_misses" cannot be found on device 1
+==18075== Warning: Event "l2_subp2_read_sysmem_sector_queries" cannot be found on device 1
+==18075== Warning: Event "inst_issued2" cannot be found on device 1
+==18075== Warning: Event "global_ld_mem_divergence_replays" cannot be found on device 1
+==18075== Warning: Event "l2_subp3_read_sysmem_sector_queries" cannot be found on device 1
+==18075== Warning: Event "l2_subp3_read_tex_sector_queries" cannot be found on device 1
+==18075== Warning: Event "shared_store_replay" cannot be found on device 1
+==18075== Warning: Event "tex2_cache_sector_misses" cannot be found on device 1
+==18075== Warning: Event "l2_subp0_read_l1_hit_sectors" cannot be found on device 1
+==18075== Warning: Event "l2_subp2_read_l1_hit_sectors" cannot be found on device 1
+==18075== Warning: Event "tex2_cache_sector_queries" cannot be found on device 1
+==18075== Warning: Event "l2_subp2_total_write_sector_queries" cannot be found on device 1
+==18075== Warning: Event "l2_subp3_write_sector_misses" cannot be found on device 1
+==18075== Warning: Event "fb_subp1_read_sectors" cannot be found on device 1
+==18075== Warning: Event "l2_subp3_total_write_sector_queries" cannot be found on device 1
+==18075== Warning: Event "global_st_mem_divergence_replays" cannot be found on device 1
+==18075== Warning: Event "l2_subp1_write_l1_sector_queries" cannot be found on device 1
+==18075== Warning: Event "l2_subp3_read_l1_sector_queries" cannot be found on device 1
+==18075== Warning: Event "l2_subp3_read_sector_misses" cannot be found on device 1
+==18075== Some kernel(s) will be replayed on device 1 in order to collect all events/metrics.
+==18075== Warning: The following aggregate event values were extrapolated from limited profile data and may therefore be inaccurate. To see the non-aggregate event values, use "--aggregate-mode off".
+tex0_cache_sector_queries,l1_local_load_hit,elapsed_cycles_sm,tex0_cache_sector_misses,tex1_cache_sector_misses,l1_global_load_miss,l1_shared_bank_conflict,l1_global_load_hit,uncached_global_load_transaction,tex1_cache_sector_queries,global_store_transaction,sm_cta_launched,l1_local_load_miss,l1_local_store_hit,l1_local_store_miss
+==18075== Profiling application: ./matMul-Sm-Un 128 1
+==18075== Profiling result:
+"Device","Context","Stream","Kernel","local_load","local_store","gld_request","gst_request","shared_load","shared_store","branch","divergent_branch","active_cycles","inst_issued1_0","inst_issued2_0","inst_issued1_1","inst_issued2_1","inst_executed","warps_launched","threads_launched","thread_inst_executed_0","thread_inst_executed_2","thread_inst_executed_1","thread_inst_executed_3","active_warps","tex0_cache_sector_queries","tex0_cache_sector_misses","tex1_cache_sector_queries","tex1_cache_sector_misses","sm_cta_launched","l1_local_load_hit","l1_local_load_miss","l1_local_store_hit","l1_local_store_miss","l1_global_load_hit","l1_global_load_miss","uncached_global_load_transaction","global_store_transaction","l1_shared_bank_conflict","prof_trigger_00","prof_trigger_01","prof_trigger_02","prof_trigger_03","prof_trigger_04","prof_trigger_05","prof_trigger_06","prof_trigger_07","fb1_subp0_read_sectors","fb1_subp1_read_sectors","fb1_subp0_write_sectors","fb1_subp1_write_sectors","l2_subp0_write_sector_misses","l2_subp1_write_sector_misses","l2_subp0_read_sector_misses","l2_subp1_read_sector_misses","l2_subp0_write_sector_queries","l2_subp1_write_sector_queries","l2_subp0_read_sector_queries","l2_subp1_read_sector_queries","l2_subp0_read_tex_sector_queries","l2_subp1_read_tex_sector_queries","l2_subp0_read_hit_sectors","l2_subp1_read_hit_sectors","l2_subp0_read_tex_hit_sectors","l2_subp1_read_tex_hit_sectors","fb0_subp0_read_sectors","fb0_subp1_read_sectors","fb0_subp0_write_sectors","fb0_subp1_write_sectors","elapsed_cycles_sm","l2_subp0_read_sysmem_sector_queries","l2_subp1_read_sysmem_sector_queries","l2_subp0_write_sysmem_sector_queries","l2_subp1_write_sysmem_sector_queries","l2_subp0_total_read_sector_queries","l2_subp1_total_read_sector_queries","l2_subp0_total_write_sector_queries","l2_subp1_total_write_sector_queries","atom_count","gred_count","gld_inst_8bit","gld_inst_16bit","gld_inst_32bit","gld_inst_64bit","gld_inst_128bit","gst_inst_8bit","gst_inst_16bit","gst_inst_32bit","gst_inst_64bit","gst_inst_128bit"
+"GeForce GT 630 (1)","1","2","matMul(float*, float*, float*, int)",0,0,8192,512,81920,8192,5120,0,867260,205767,31568,205740,31568,223744,512,16384,2572288,1007616,2572288,1007616,33294906,0,0,0,0,64,0,0,0,0,116366,14896,0,8192,516096,0,0,0,0,0,0,0,0,935,924,789,824,1507,1643,1868,1887,4096,4096,29872,29748,0,0,27896,27892,0,0,952,948,800,789,872148,0,0,0,0,30208,29532,4096,4096,0,0,0,0,262144,0,0,0,0,16384,0,0
+==18084== NVPROF is profiling process 18084, command: ./matMul-Sm-Un 256 1
+==18084== Warning: Event "l2_subp3_total_write_sector_queries" cannot be found on device 1
+==18084== Warning: Event "l2_subp3_read_l1_hit_sectors" cannot be found on device 1
+==18084== Warning: Event "fb_subp1_write_sectors" cannot be found on device 1
+==18084== Warning: Event "l2_subp0_write_l1_sector_queries" cannot be found on device 1
+==18084== Warning: Event "shared_store_replay" cannot be found on device 1
+==18084== Warning: Event "l2_subp2_read_sysmem_sector_queries" cannot be found on device 1
+==18084== Warning: Event "__l1_global_load_transactions" cannot be found on device 1
+==18084== Warning: Event "l1_shared_load_transactions" cannot be found on device 1
+==18084== Warning: Event "tex2_cache_sector_queries" cannot be found on device 1
+==18084== Warning: Event "l2_subp2_read_tex_hit_sectors" cannot be found on device 1
+==18084== Warning: Event "l2_subp3_total_read_sector_queries" cannot be found on device 1
+==18084== Warning: Event "local_load_transactions" cannot be found on device 1
+==18084== Warning: Event "l2_subp3_read_tex_hit_sectors" cannot be found on device 1
+==18084== Warning: Event "shared_load_replay" cannot be found on device 1
+==18084== Warning: Event "global_ld_mem_divergence_replays" cannot be found on device 1
+==18084== Warning: Event "l2_subp3_read_sector_misses" cannot be found on device 1
+==18084== Warning: Event "l2_subp2_write_sysmem_sector_queries" cannot be found on device 1
+==18084== Warning: Event "l2_subp0_read_l1_hit_sectors" cannot be found on device 1
+==18084== Warning: Event "l2_subp2_read_tex_sector_queries" cannot be found on device 1
+==18084== Warning: Event "fb_subp1_read_sectors" cannot be found on device 1
+==18084== Warning: Event "l2_subp1_read_l1_sector_queries" cannot be found on device 1
+==18084== Warning: Event "l2_subp2_write_l1_sector_queries" cannot be found on device 1
+==18084== Warning: Event "global_st_mem_divergence_replays" cannot be found on device 1
+==18084== Warning: Event "l2_subp2_read_l1_sector_queries" cannot be found on device 1
+==18084== Warning: Event "inst_issued1" cannot be found on device 1
+==18084== Warning: Event "l2_subp2_total_read_sector_queries" cannot be found on device 1
+==18084== Warning: Event "l2_subp2_read_sector_misses" cannot be found on device 1
+==18084== Warning: Event "l2_subp3_read_l1_sector_queries" cannot be found on device 1
+==18084== Warning: Event "l2_subp3_write_sector_misses" cannot be found on device 1
+==18084== Warning: Event "l2_subp0_read_l1_sector_queries" cannot be found on device 1
+==18084== Warning: Event "l2_subp1_read_l1_hit_sectors" cannot be found on device 1
+==18084== Warning: Event "l2_subp3_write_l1_sector_queries" cannot be found on device 1
+==18084== Warning: Event "fb_subp0_write_sectors" cannot be found on device 1
+==18084== Warning: Event "l2_subp2_write_sector_misses" cannot be found on device 1
+==18084== Warning: Event "l2_subp2_read_l1_hit_sectors" cannot be found on device 1
+==18084== Warning: Event "l2_subp3_write_sysmem_sector_queries" cannot be found on device 1
+==18084== Warning: Event "ld_inst_8bit" cannot be found on device 1
+==18084== Warning: Event "l2_subp2_total_write_sector_queries" cannot be found on device 1
+==18084== Warning: Event "tex2_cache_sector_misses" cannot be found on device 1
+==18084== Warning: Event "tex3_cache_sector_misses" cannot be found on device 1
+==18084== Warning: Event "__l1_global_store_transactions" cannot be found on device 1
+==18084== Warning: Event "l2_subp1_write_l1_sector_queries" cannot be found on device 1
+==18084== Warning: Event "local_store_transactions" cannot be found on device 1
+==18084== Warning: Event "b_subp0_read_sectors" cannot be found on device 1
+==18084== Warning: Event "l2_subp3_read_sysmem_sector_queries" cannot be found on device 1
+==18084== Warning: Event "l2_subp3_read_tex_sector_queries" cannot be found on device 1
+==18084== Warning: Event "tex3_cache_sector_queries" cannot be found on device 1
+==18084== Warning: Event "l1_shared_store_transactions" cannot be found on device 1
+==18084== Warning: Event "inst_issued2" cannot be found on device 1
+==18084== Some kernel(s) will be replayed on device 1 in order to collect all events/metrics.
+==18084== Warning: The following aggregate event values were extrapolated from limited profile data and may therefore be inaccurate. To see the non-aggregate event values, use "--aggregate-mode off".
+tex0_cache_sector_queries,l1_local_load_hit,elapsed_cycles_sm,tex0_cache_sector_misses,tex1_cache_sector_misses,l1_global_load_miss,l1_shared_bank_conflict,l1_global_load_hit,uncached_global_load_transaction,tex1_cache_sector_queries,global_store_transaction,sm_cta_launched,l1_local_load_miss,l1_local_store_hit,l1_local_store_miss
+==18084== Profiling application: ./matMul-Sm-Un 256 1
+==18084== Profiling result:
+"Device","Context","Stream","Kernel","local_load","local_store","gld_request","gst_request","shared_load","shared_store","branch","divergent_branch","active_cycles","inst_issued1_0","inst_issued2_0","inst_issued1_1","inst_issued2_1","inst_executed","warps_launched","threads_launched","thread_inst_executed_0","thread_inst_executed_2","thread_inst_executed_1","thread_inst_executed_3","active_warps","tex0_cache_sector_queries","tex0_cache_sector_misses","tex1_cache_sector_queries","tex1_cache_sector_misses","sm_cta_launched","l1_local_load_hit","l1_local_load_miss","l1_local_store_hit","l1_local_store_miss","l1_global_load_hit","l1_global_load_miss","uncached_global_load_transaction","global_store_transaction","l1_shared_bank_conflict","prof_trigger_00","prof_trigger_01","prof_trigger_02","prof_trigger_03","prof_trigger_04","prof_trigger_05","prof_trigger_06","prof_trigger_07","fb1_subp0_read_sectors","fb1_subp1_read_sectors","fb1_subp0_write_sectors","fb1_subp1_write_sectors","l2_subp0_write_sector_misses","l2_subp1_write_sector_misses","l2_subp0_read_sector_misses","l2_subp1_read_sector_misses","l2_subp0_write_sector_queries","l2_subp1_write_sector_queries","l2_subp0_read_sector_queries","l2_subp1_read_sector_queries","l2_subp0_read_tex_sector_queries","l2_subp1_read_tex_sector_queries","l2_subp0_read_hit_sectors","l2_subp1_read_hit_sectors","l2_subp0_read_tex_hit_sectors","l2_subp1_read_tex_hit_sectors","fb0_subp0_read_sectors","fb0_subp1_read_sectors","fb0_subp0_write_sectors","fb0_subp1_write_sectors","elapsed_cycles_sm","l2_subp0_read_sysmem_sector_queries","l2_subp1_read_sysmem_sector_queries","l2_subp0_write_sysmem_sector_queries","l2_subp1_write_sysmem_sector_queries","l2_subp0_total_read_sector_queries","l2_subp1_total_read_sector_queries","l2_subp0_total_write_sector_queries","l2_subp1_total_write_sector_queries","atom_count","gred_count","gld_inst_8bit","gld_inst_16bit","gld_inst_32bit","gld_inst_64bit","gld_inst_128bit","gst_inst_8bit","gst_inst_16bit","gst_inst_32bit","gst_inst_64bit","gst_inst_128bit"
+"GeForce GT 630 (1)","1","2","matMul(float*, float*, float*, int)",0,0,65536,2048,655360,65536,36864,0,6939244,1638222,232528,1638288,232528,1697792,2048,65536,19726336,7438336,19726336,7438336,274573241,0,0,0,0,256,0,0,0,0,914494,137128,0,32768,4128768,0,0,0,0,0,0,0,0,16011,15964,3208,3170,6327,6365,31896,31971,16384,16384,269812,270144,0,0,241356,237188,0,0,15936,15884,3092,3144,6945836,0,0,0,0,269744,272428,16384,16384,0,0,0,0,2097152,0,0,0,0,65536,0,0
+==18092== NVPROF is profiling process 18092, command: ./matMul-Sm-Un 512 1
+==18092== Warning: Event "l2_subp3_read_sector_misses" cannot be found on device 1
+==18092== Warning: Event "__l1_global_load_transactions" cannot be found on device 1
+==18092== Warning: Event "fb_subp1_read_sectors" cannot be found on device 1
+==18092== Warning: Event "l2_subp0_write_l1_sector_queries" cannot be found on device 1
+==18092== Warning: Event "b_subp0_read_sectors" cannot be found on device 1
+==18092== Warning: Event "tex2_cache_sector_misses" cannot be found on device 1
+==18092== Warning: Event "l2_subp2_total_write_sector_queries" cannot be found on device 1
+==18092== Warning: Event "l2_subp1_write_l1_sector_queries" cannot be found on device 1
+==18092== Warning: Event "shared_store_replay" cannot be found on device 1
+==18092== Warning: Event "l2_subp2_read_tex_sector_queries" cannot be found on device 1
+==18092== Warning: Event "local_store_transactions" cannot be found on device 1
+==18092== Warning: Event "fb_subp1_write_sectors" cannot be found on device 1
+==18092== Warning: Event "l2_subp2_read_tex_hit_sectors" cannot be found on device 1
+==18092== Warning: Event "l2_subp0_read_l1_hit_sectors" cannot be found on device 1
+==18092== Warning: Event "inst_issued2" cannot be found on device 1
+==18092== Warning: Event "l2_subp2_write_sysmem_sector_queries" cannot be found on device 1
+==18092== Warning: Event "l1_shared_store_transactions" cannot be found on device 1
+==18092== Warning: Event "l2_subp3_read_sysmem_sector_queries" cannot be found on device 1
+==18092== Warning: Event "l2_subp3_read_tex_sector_queries" cannot be found on device 1
+==18092== Warning: Event "l2_subp2_read_l1_hit_sectors" cannot be found on device 1
+==18092== Warning: Event "l2_subp3_read_tex_hit_sectors" cannot be found on device 1
+==18092== Warning: Event "l2_subp2_read_l1_sector_queries" cannot be found on device 1
+==18092== Warning: Event "tex2_cache_sector_queries" cannot be found on device 1
+==18092== Warning: Event "l2_subp2_read_sysmem_sector_queries" cannot be found on device 1
+==18092== Warning: Event "l2_subp2_write_sector_misses" cannot be found on device 1
+==18092== Warning: Event "shared_load_replay" cannot be found on device 1
+==18092== Warning: Event "l2_subp1_read_l1_sector_queries" cannot be found on device 1
+==18092== Warning: Event "l2_subp3_read_l1_sector_queries" cannot be found on device 1
+==18092== Warning: Event "l2_subp3_total_read_sector_queries" cannot be found on device 1
+==18092== Warning: Event "local_load_transactions" cannot be found on device 1
+==18092== Warning: Event "l1_shared_load_transactions" cannot be found on device 1
+==18092== Warning: Event "global_ld_mem_divergence_replays" cannot be found on device 1
+==18092== Warning: Event "l2_subp2_total_read_sector_queries" cannot be found on device 1
+==18092== Warning: Event "l2_subp3_write_sysmem_sector_queries" cannot be found on device 1
+==18092== Warning: Event "tex3_cache_sector_queries" cannot be found on device 1
+==18092== Warning: Event "l2_subp3_write_l1_sector_queries" cannot be found on device 1
+==18092== Warning: Event "tex3_cache_sector_misses" cannot be found on device 1
+==18092== Warning: Event "l2_subp1_read_l1_hit_sectors" cannot be found on device 1
+==18092== Warning: Event "l2_subp2_write_l1_sector_queries" cannot be found on device 1
+==18092== Warning: Event "l2_subp3_read_l1_hit_sectors" cannot be found on device 1
+==18092== Warning: Event "l2_subp3_total_write_sector_queries" cannot be found on device 1
+==18092== Warning: Event "__l1_global_store_transactions" cannot be found on device 1
+==18092== Warning: Event "l2_subp0_read_l1_sector_queries" cannot be found on device 1
+==18092== Warning: Event "ld_inst_8bit" cannot be found on device 1
+==18092== Warning: Event "l2_subp3_write_sector_misses" cannot be found on device 1
+==18092== Warning: Event "l2_subp2_read_sector_misses" cannot be found on device 1
+==18092== Warning: Event "global_st_mem_divergence_replays" cannot be found on device 1
+==18092== Warning: Event "inst_issued1" cannot be found on device 1
+==18092== Warning: Event "fb_subp0_write_sectors" cannot be found on device 1
+==18092== Some kernel(s) will be replayed on device 1 in order to collect all events/metrics.
+==18092== Warning: The following aggregate event values were extrapolated from limited profile data and may therefore be inaccurate. To see the non-aggregate event values, use "--aggregate-mode off".
+tex0_cache_sector_queries,l1_local_load_hit,elapsed_cycles_sm,tex0_cache_sector_misses,tex1_cache_sector_misses,l1_global_load_miss,l1_shared_bank_conflict,l1_global_load_hit,uncached_global_load_transaction,tex1_cache_sector_queries,global_store_transaction,sm_cta_launched,l1_local_load_miss,l1_local_store_hit,l1_local_store_miss
+==18092== Profiling application: ./matMul-Sm-Un 512 1
+==18092== Profiling result:
+"Device","Context","Stream","Kernel","local_load","local_store","gld_request","gst_request","shared_load","shared_store","branch","divergent_branch","active_cycles","inst_issued1_0","inst_issued2_0","inst_issued1_1","inst_issued2_1","inst_executed","warps_launched","threads_launched","thread_inst_executed_0","thread_inst_executed_2","thread_inst_executed_1","thread_inst_executed_3","active_warps","tex0_cache_sector_queries","tex0_cache_sector_misses","tex1_cache_sector_queries","tex1_cache_sector_misses","sm_cta_launched","l1_local_load_hit","l1_local_load_miss","l1_local_store_hit","l1_local_store_miss","l1_global_load_hit","l1_global_load_miss","uncached_global_load_transaction","global_store_transaction","l1_shared_bank_conflict","prof_trigger_00","prof_trigger_01","prof_trigger_02","prof_trigger_03","prof_trigger_04","prof_trigger_05","prof_trigger_06","prof_trigger_07","fb1_subp0_read_sectors","fb1_subp1_read_sectors","fb1_subp0_write_sectors","fb1_subp1_write_sectors","l2_subp0_write_sector_misses","l2_subp1_write_sector_misses","l2_subp0_read_sector_misses","l2_subp1_read_sector_misses","l2_subp0_write_sector_queries","l2_subp1_write_sector_queries","l2_subp0_read_sector_queries","l2_subp1_read_sector_queries","l2_subp0_read_tex_sector_queries","l2_subp1_read_tex_sector_queries","l2_subp0_read_hit_sectors","l2_subp1_read_hit_sectors","l2_subp0_read_tex_hit_sectors","l2_subp1_read_tex_hit_sectors","fb0_subp0_read_sectors","fb0_subp1_read_sectors","fb0_subp0_write_sectors","fb0_subp1_write_sectors","elapsed_cycles_sm","l2_subp0_read_sysmem_sector_queries","l2_subp1_read_sysmem_sector_queries","l2_subp0_write_sysmem_sector_queries","l2_subp1_write_sysmem_sector_queries","l2_subp0_total_read_sector_queries","l2_subp1_total_read_sector_queries","l2_subp0_total_write_sector_queries","l2_subp1_total_write_sector_queries","atom_count","gred_count","gld_inst_8bit","gld_inst_16bit","gld_inst_32bit","gld_inst_64bit","gld_inst_128bit","gst_inst_8bit","gst_inst_16bit","gst_inst_32bit","gst_inst_64bit","gst_inst_128bit"
+"GeForce GT 630 (1)","1","2","matMul(float*, float*, float*, int)",0,0,524288,8192,5242880,524288,278528,0,55737628,13198948,1781840,13193775,1781840,13213696,8192,262144,154402816,57016320,154402816,57016320,2222784570,0,0,0,0,1024,0,0,0,0,7306176,1089598,0,131072,33030144,0,0,0,0,0,0,0,0,202407,200256,12398,12440,24626,24826,400740,403371,65536,65536,2176964,2172428,0,0,1773948,1770168,0,0,201592,199716,12481,12588,55748782,0,0,0,0,2170300,2168540,65536,65536,0,0,0,0,16777216,0,0,0,0,262144,0,0
+==18100== NVPROF is profiling process 18100, command: ./matMul-Sm-Un 1024 1
+==18100== Warning: Event "l2_subp3_read_tex_hit_sectors" cannot be found on device 1
+==18100== Warning: Event "l1_shared_store_transactions" cannot be found on device 1
+==18100== Warning: Event "l2_subp2_total_read_sector_queries" cannot be found on device 1
+==18100== Warning: Event "l2_subp0_write_l1_sector_queries" cannot be found on device 1
+==18100== Warning: Event "l2_subp2_read_sysmem_sector_queries" cannot be found on device 1
+==18100== Warning: Event "l2_subp3_write_sysmem_sector_queries" cannot be found on device 1
+==18100== Warning: Event "shared_load_replay" cannot be found on device 1
+==18100== Warning: Event "fb_subp0_write_sectors" cannot be found on device 1
+==18100== Warning: Event "l2_subp2_read_l1_sector_queries" cannot be found on device 1
+==18100== Warning: Event "l2_subp1_read_l1_sector_queries" cannot be found on device 1
+==18100== Warning: Event "l1_shared_load_transactions" cannot be found on device 1
+==18100== Warning: Event "tex3_cache_sector_queries" cannot be found on device 1
+==18100== Warning: Event "global_st_mem_divergence_replays" cannot be found on device 1
+==18100== Warning: Event "inst_issued2" cannot be found on device 1
+==18100== Warning: Event "l2_subp1_write_l1_sector_queries" cannot be found on device 1
+==18100== Warning: Event "local_store_transactions" cannot be found on device 1
+==18100== Warning: Event "l2_subp1_read_l1_hit_sectors" cannot be found on device 1
+==18100== Warning: Event "l2_subp2_write_sector_misses" cannot be found on device 1
+==18100== Warning: Event "l2_subp3_total_read_sector_queries" cannot be found on device 1
+==18100== Warning: Event "l2_subp2_read_tex_hit_sectors" cannot be found on device 1
+==18100== Warning: Event "fb_subp1_write_sectors" cannot be found on device 1
+==18100== Warning: Event "l2_subp0_read_l1_sector_queries" cannot be found on device 1
+==18100== Warning: Event "l2_subp3_read_l1_sector_queries" cannot be found on device 1
+==18100== Warning: Event "shared_store_replay" cannot be found on device 1
+==18100== Warning: Event "l2_subp3_total_write_sector_queries" cannot be found on device 1
+==18100== Warning: Event "l2_subp3_write_l1_sector_queries" cannot be found on device 1
+==18100== Warning: Event "l2_subp2_read_tex_sector_queries" cannot be found on device 1
+==18100== Warning: Event "tex3_cache_sector_misses" cannot be found on device 1
+==18100== Warning: Event "tex2_cache_sector_misses" cannot be found on device 1
+==18100== Warning: Event "l2_subp2_read_sector_misses" cannot be found on device 1
+==18100== Warning: Event "local_load_transactions" cannot be found on device 1
+==18100== Warning: Event "l2_subp2_write_sysmem_sector_queries" cannot be found on device 1
+==18100== Warning: Event "l2_subp3_read_sector_misses" cannot be found on device 1
+==18100== Warning: Event "l2_subp3_read_tex_sector_queries" cannot be found on device 1
+==18100== Warning: Event "l2_subp3_read_l1_hit_sectors" cannot be found on device 1
+==18100== Warning: Event "__l1_global_store_transactions" cannot be found on device 1
+==18100== Warning: Event "l2_subp2_write_l1_sector_queries" cannot be found on device 1
+==18100== Warning: Event "inst_issued1" cannot be found on device 1
+==18100== Warning: Event "l2_subp0_read_l1_hit_sectors" cannot be found on device 1
+==18100== Warning: Event "__l1_global_load_transactions" cannot be found on device 1
+==18100== Warning: Event "global_ld_mem_divergence_replays" cannot be found on device 1
+==18100== Warning: Event "l2_subp3_write_sector_misses" cannot be found on device 1
+==18100== Warning: Event "b_subp0_read_sectors" cannot be found on device 1
+==18100== Warning: Event "l2_subp3_read_sysmem_sector_queries" cannot be found on device 1
+==18100== Warning: Event "l2_subp2_total_write_sector_queries" cannot be found on device 1
+==18100== Warning: Event "tex2_cache_sector_queries" cannot be found on device 1
+==18100== Warning: Event "ld_inst_8bit" cannot be found on device 1
+==18100== Warning: Event "fb_subp1_read_sectors" cannot be found on device 1
+==18100== Warning: Event "l2_subp2_read_l1_hit_sectors" cannot be found on device 1
+==18100== Some kernel(s) will be replayed on device 1 in order to collect all events/metrics.
+==18100== Warning: The following aggregate event values were extrapolated from limited profile data and may therefore be inaccurate. To see the non-aggregate event values, use "--aggregate-mode off".
+tex0_cache_sector_queries,l1_local_load_hit,elapsed_cycles_sm,tex0_cache_sector_misses,tex1_cache_sector_misses,l1_global_load_miss,l1_shared_bank_conflict,l1_global_load_hit,uncached_global_load_transaction,tex1_cache_sector_queries,global_store_transaction,sm_cta_launched,l1_local_load_miss,l1_local_store_hit,l1_local_store_miss
+==18100== Profiling application: ./matMul-Sm-Un 1024 1
+==18100== Profiling result:
+"Device","Context","Stream","Kernel","local_load","local_store","gld_request","gst_request","shared_load","shared_store","branch","divergent_branch","active_cycles","inst_issued1_0","inst_issued2_0","inst_issued1_1","inst_issued2_1","inst_executed","warps_launched","threads_launched","thread_inst_executed_0","thread_inst_executed_2","thread_inst_executed_1","thread_inst_executed_3","active_warps","tex0_cache_sector_queries","tex0_cache_sector_misses","tex1_cache_sector_queries","tex1_cache_sector_misses","sm_cta_launched","l1_local_load_hit","l1_local_load_miss","l1_local_store_hit","l1_local_store_miss","l1_global_load_hit","l1_global_load_miss","uncached_global_load_transaction","global_store_transaction","l1_shared_bank_conflict","prof_trigger_00","prof_trigger_01","prof_trigger_02","prof_trigger_03","prof_trigger_04","prof_trigger_05","prof_trigger_06","prof_trigger_07","fb1_subp0_read_sectors","fb1_subp1_read_sectors","fb1_subp0_write_sectors","fb1_subp1_write_sectors","l2_subp0_write_sector_misses","l2_subp1_write_sector_misses","l2_subp0_read_sector_misses","l2_subp1_read_sector_misses","l2_subp0_write_sector_queries","l2_subp1_write_sector_queries","l2_subp0_read_sector_queries","l2_subp1_read_sector_queries","l2_subp0_read_tex_sector_queries","l2_subp1_read_tex_sector_queries","l2_subp0_read_hit_sectors","l2_subp1_read_hit_sectors","l2_subp0_read_tex_hit_sectors","l2_subp1_read_tex_hit_sectors","fb0_subp0_read_sectors","fb0_subp1_read_sectors","fb0_subp0_write_sectors","fb0_subp1_write_sectors","elapsed_cycles_sm","l2_subp0_read_sysmem_sector_queries","l2_subp1_read_sysmem_sector_queries","l2_subp0_write_sysmem_sector_queries","l2_subp1_write_sysmem_sector_queries","l2_subp0_total_read_sector_queries","l2_subp1_total_read_sector_queries","l2_subp0_total_write_sector_queries","l2_subp1_total_write_sector_queries","atom_count","gred_count","gld_inst_8bit","gld_inst_16bit","gld_inst_32bit","gld_inst_64bit","gld_inst_128bit","gst_inst_8bit","gst_inst_16bit","gst_inst_32bit","gst_inst_64bit","gst_inst_128bit"
+"GeForce GT 630 (1)","1","2","matMul(float*, float*, float*, int)",0,0,4194304,32768,41943040,4194304,2162688,0,447668517,106762468,13942864,106759806,13942864,104235008,32768,1048576,1221591040,446169088,1221591040,446169088,17888087860,0,0,0,0,4096,0,0,0,0,58931402,8166108,0,524288,264241152,0,0,0,0,0,0,0,0,3114575,3110832,46718,46693,92766,93456,6227132,6224539,262144,262144,16344792,16323452,0,0,10094092,10076584,0,0,3114304,3112412,46127,46552,447637632,0,0,0,0,16341432,16311888,262144,262144,0,0,0,0,134217728,0,0,0,0,1048576,0,0
+==18108== NVPROF is profiling process 18108, command: ./matMul-Sm-Un 2048 1
+==18108== Warning: Event "l2_subp3_read_tex_sector_queries" cannot be found on device 1
+==18108== Warning: Event "l2_subp3_total_write_sector_queries" cannot be found on device 1
+==18108== Warning: Event "l2_subp2_read_l1_hit_sectors" cannot be found on device 1
+==18108== Warning: Event "global_ld_mem_divergence_replays" cannot be found on device 1
+==18108== Warning: Event "fb_subp0_write_sectors" cannot be found on device 1
+==18108== Warning: Event "l2_subp3_write_sector_misses" cannot be found on device 1
+==18108== Warning: Event "l2_subp2_read_tex_sector_queries" cannot be found on device 1
+==18108== Warning: Event "l2_subp3_write_l1_sector_queries" cannot be found on device 1
+==18108== Warning: Event "fb_subp1_write_sectors" cannot be found on device 1
+==18108== Warning: Event "l2_subp2_total_write_sector_queries" cannot be found on device 1
+==18108== Warning: Event "l2_subp0_read_l1_hit_sectors" cannot be found on device 1
+==18108== Warning: Event "tex3_cache_sector_queries" cannot be found on device 1
+==18108== Warning: Event "shared_store_replay" cannot be found on device 1
+==18108== Warning: Event "local_store_transactions" cannot be found on device 1
+==18108== Warning: Event "fb_subp1_read_sectors" cannot be found on device 1
+==18108== Warning: Event "l2_subp1_read_l1_sector_queries" cannot be found on device 1
+==18108== Warning: Event "l2_subp2_write_sysmem_sector_queries" cannot be found on device 1
+==18108== Warning: Event "l2_subp3_read_l1_hit_sectors" cannot be found on device 1
+==18108== Warning: Event "l2_subp1_write_l1_sector_queries" cannot be found on device 1
+==18108== Warning: Event "tex3_cache_sector_misses" cannot be found on device 1
+==18108== Warning: Event "l2_subp3_read_l1_sector_queries" cannot be found on device 1
+==18108== Warning: Event "local_load_transactions" cannot be found on device 1
+==18108== Warning: Event "l2_subp2_write_l1_sector_queries" cannot be found on device 1
+==18108== Warning: Event "l2_subp2_total_read_sector_queries" cannot be found on device 1
+==18108== Warning: Event "l2_subp2_write_sector_misses" cannot be found on device 1
+==18108== Warning: Event "l1_shared_store_transactions" cannot be found on device 1
+==18108== Warning: Event "__l1_global_load_transactions" cannot be found on device 1
+==18108== Warning: Event "b_subp0_read_sectors" cannot be found on device 1
+==18108== Warning: Event "l2_subp3_read_sector_misses" cannot be found on device 1
+==18108== Warning: Event "tex2_cache_sector_misses" cannot be found on device 1
+==18108== Warning: Event "l2_subp3_read_sysmem_sector_queries" cannot be found on device 1
+==18108== Warning: Event "l2_subp3_total_read_sector_queries" cannot be found on device 1
+==18108== Warning: Event "shared_load_replay" cannot be found on device 1
+==18108== Warning: Event "inst_issued2" cannot be found on device 1
+==18108== Warning: Event "__l1_global_store_transactions" cannot be found on device 1
+==18108== Warning: Event "l2_subp3_read_tex_hit_sectors" cannot be found on device 1
+==18108== Warning: Event "inst_issued1" cannot be found on device 1
+==18108== Warning: Event "l2_subp2_read_sector_misses" cannot be found on device 1
+==18108== Warning: Event "l2_subp1_read_l1_hit_sectors" cannot be found on device 1
+==18108== Warning: Event "l2_subp2_read_tex_hit_sectors" cannot be found on device 1
+==18108== Warning: Event "tex2_cache_sector_queries" cannot be found on device 1
+==18108== Warning: Event "l2_subp2_read_sysmem_sector_queries" cannot be found on device 1
+==18108== Warning: Event "l2_subp0_read_l1_sector_queries" cannot be found on device 1
+==18108== Warning: Event "global_st_mem_divergence_replays" cannot be found on device 1
+==18108== Warning: Event "ld_inst_8bit" cannot be found on device 1
+==18108== Warning: Event "l2_subp2_read_l1_sector_queries" cannot be found on device 1
+==18108== Warning: Event "l2_subp3_write_sysmem_sector_queries" cannot be found on device 1
+==18108== Warning: Event "l2_subp0_write_l1_sector_queries" cannot be found on device 1
+==18108== Warning: Event "l1_shared_load_transactions" cannot be found on device 1
+==18108== Some kernel(s) will be replayed on device 1 in order to collect all events/metrics.
+==18108== Warning: The following aggregate event values were extrapolated from limited profile data and may therefore be inaccurate. To see the non-aggregate event values, use "--aggregate-mode off".
+tex0_cache_sector_queries,l1_local_load_hit,elapsed_cycles_sm,tex0_cache_sector_misses,tex1_cache_sector_misses,l1_global_load_miss,l1_shared_bank_conflict,l1_global_load_hit,uncached_global_load_transaction,tex1_cache_sector_queries,global_store_transaction,sm_cta_launched,l1_local_load_miss,l1_local_store_hit,l1_local_store_miss
+==18108== Profiling application: ./matMul-Sm-Un 2048 1
+==18108== Profiling result:
+"Device","Context","Stream","Kernel","local_load","local_store","gld_request","gst_request","shared_load","shared_store","branch","divergent_branch","active_cycles","inst_issued1_0","inst_issued2_0","inst_issued1_1","inst_issued2_1","inst_executed","warps_launched","threads_launched","thread_inst_executed_0","thread_inst_executed_2","thread_inst_executed_1","thread_inst_executed_3","active_warps","tex0_cache_sector_queries","tex0_cache_sector_misses","tex1_cache_sector_queries","tex1_cache_sector_misses","sm_cta_launched","l1_local_load_hit","l1_local_load_miss","l1_local_store_hit","l1_local_store_miss","l1_global_load_hit","l1_global_load_miss","uncached_global_load_transaction","global_store_transaction","l1_shared_bank_conflict","prof_trigger_00","prof_trigger_01","prof_trigger_02","prof_trigger_03","prof_trigger_04","prof_trigger_05","prof_trigger_06","prof_trigger_07","fb1_subp0_read_sectors","fb1_subp1_read_sectors","fb1_subp0_write_sectors","fb1_subp1_write_sectors","l2_subp0_write_sector_misses","l2_subp1_write_sector_misses","l2_subp0_read_sector_misses","l2_subp1_read_sector_misses","l2_subp0_write_sector_queries","l2_subp1_write_sector_queries","l2_subp0_read_sector_queries","l2_subp1_read_sector_queries","l2_subp0_read_tex_sector_queries","l2_subp1_read_tex_sector_queries","l2_subp0_read_hit_sectors","l2_subp1_read_hit_sectors","l2_subp0_read_tex_hit_sectors","l2_subp1_read_tex_hit_sectors","fb0_subp0_read_sectors","fb0_subp1_read_sectors","fb0_subp0_write_sectors","fb0_subp1_write_sectors","elapsed_cycles_sm","l2_subp0_read_sysmem_sector_queries","l2_subp1_read_sysmem_sector_queries","l2_subp0_write_sysmem_sector_queries","l2_subp1_write_sysmem_sector_queries","l2_subp0_total_read_sector_queries","l2_subp1_total_read_sector_queries","l2_subp0_total_write_sector_queries","l2_subp1_total_write_sector_queries","atom_count","gred_count","gld_inst_8bit","gld_inst_16bit","gld_inst_32bit","gld_inst_64bit","gld_inst_128bit","gst_inst_8bit","gst_inst_16bit","gst_inst_32bit","gst_inst_64bit","gst_inst_128bit"
+"GeForce GT 630 (1)","1","2","matMul(float*, float*, float*, int)",0,0,33554432,131072,335544320,33554432,17039360,0,1787198168,851096837,110297168,851123036,110297168,827981824,131072,4194304,9718202368,3529506816,9718202368,3529506816,142925159799,0,0,0,0,16384,0,0,0,0,472432278,64413508,0,2097152,2113929216,0,0,0,0,0,0,0,0,25171751,25170228,196000,195467,388459,391397,50342224,50341183,1048576,1048576,128829856,128839048,0,0,78527724,78505944,0,0,25171116,25171600,193662,194140,3574401386,0,0,0,0,128909256,128868808,1048576,1048576,0,0,0,0,1073741824,0,0,0,0,4194304,0,0
+==18117== NVPROF is profiling process 18117, command: ./matMul-Sm-Un 4096 1
+==18117== Warning: Event "l2_subp0_read_l1_hit_sectors" cannot be found on device 1
+==18117== Warning: Event "l2_subp2_read_l1_hit_sectors" cannot be found on device 1
+==18117== Warning: Event "l2_subp2_read_l1_sector_queries" cannot be found on device 1
+==18117== Warning: Event "ld_inst_8bit" cannot be found on device 1
+==18117== Warning: Event "tex3_cache_sector_queries" cannot be found on device 1
+==18117== Warning: Event "l2_subp3_read_l1_hit_sectors" cannot be found on device 1
+==18117== Warning: Event "l2_subp0_write_l1_sector_queries" cannot be found on device 1
+==18117== Warning: Event "l2_subp3_read_sysmem_sector_queries" cannot be found on device 1
+==18117== Warning: Event "inst_issued2" cannot be found on device 1
+==18117== Warning: Event "fb_subp0_write_sectors" cannot be found on device 1
+==18117== Warning: Event "l2_subp2_write_sysmem_sector_queries" cannot be found on device 1
+==18117== Warning: Event "local_load_transactions" cannot be found on device 1
+==18117== Warning: Event "l2_subp2_read_tex_hit_sectors" cannot be found on device 1
+==18117== Warning: Event "global_st_mem_divergence_replays" cannot be found on device 1
+==18117== Warning: Event "l2_subp3_total_write_sector_queries" cannot be found on device 1
+==18117== Warning: Event "l1_shared_load_transactions" cannot be found on device 1
+==18117== Warning: Event "l2_subp3_read_sector_misses" cannot be found on device 1
+==18117== Warning: Event "shared_load_replay" cannot be found on device 1
+==18117== Warning: Event "tex2_cache_sector_queries" cannot be found on device 1
+==18117== Warning: Event "l2_subp1_write_l1_sector_queries" cannot be found on device 1
+==18117== Warning: Event "l2_subp3_total_read_sector_queries" cannot be found on device 1
+==18117== Warning: Event "l2_subp2_read_sysmem_sector_queries" cannot be found on device 1
+==18117== Warning: Event "l2_subp3_read_tex_sector_queries" cannot be found on device 1
+==18117== Warning: Event "l2_subp2_write_sector_misses" cannot be found on device 1
+==18117== Warning: Event "l2_subp2_read_sector_misses" cannot be found on device 1
+==18117== Warning: Event "b_subp0_read_sectors" cannot be found on device 1
+==18117== Warning: Event "__l1_global_store_transactions" cannot be found on device 1
+==18117== Warning: Event "l2_subp1_read_l1_hit_sectors" cannot be found on device 1
+==18117== Warning: Event "tex2_cache_sector_misses" cannot be found on device 1
+==18117== Warning: Event "__l1_global_load_transactions" cannot be found on device 1
+==18117== Warning: Event "local_store_transactions" cannot be found on device 1
+==18117== Warning: Event "l2_subp2_total_read_sector_queries" cannot be found on device 1
+==18117== Warning: Event "l2_subp3_write_l1_sector_queries" cannot be found on device 1
+==18117== Warning: Event "l1_shared_store_transactions" cannot be found on device 1
+==18117== Warning: Event "l2_subp1_read_l1_sector_queries" cannot be found on device 1
+==18117== Warning: Event "fb_subp1_read_sectors" cannot be found on device 1
+==18117== Warning: Event "global_ld_mem_divergence_replays" cannot be found on device 1
+==18117== Warning: Event "l2_subp2_read_tex_sector_queries" cannot be found on device 1
+==18117== Warning: Event "l2_subp3_write_sysmem_sector_queries" cannot be found on device 1
+==18117== Warning: Event "l2_subp3_read_l1_sector_queries" cannot be found on device 1
+==18117== Warning: Event "l2_subp0_read_l1_sector_queries" cannot be found on device 1
+==18117== Warning: Event "inst_issued1" cannot be found on device 1
+==18117== Warning: Event "tex3_cache_sector_misses" cannot be found on device 1
+==18117== Warning: Event "l2_subp2_write_l1_sector_queries" cannot be found on device 1
+==18117== Warning: Event "l2_subp3_write_sector_misses" cannot be found on device 1
+==18117== Warning: Event "fb_subp1_write_sectors" cannot be found on device 1
+==18117== Warning: Event "l2_subp2_total_write_sector_queries" cannot be found on device 1
+==18117== Warning: Event "l2_subp3_read_tex_hit_sectors" cannot be found on device 1
+==18117== Warning: Event "shared_store_replay" cannot be found on device 1
+==18117== Some kernel(s) will be replayed on device 1 in order to collect all events/metrics.
+==18117== Warning: The following aggregate event values were extrapolated from limited profile data and may therefore be inaccurate. To see the non-aggregate event values, use "--aggregate-mode off".
+tex0_cache_sector_queries,l1_local_load_hit,elapsed_cycles_sm,tex0_cache_sector_misses,tex1_cache_sector_misses,l1_global_load_miss,l1_shared_bank_conflict,l1_global_load_hit,uncached_global_load_transaction,tex1_cache_sector_queries,global_store_transaction,sm_cta_launched,l1_local_load_miss,l1_local_store_hit,l1_local_store_miss
+==18117== Profiling application: ./matMul-Sm-Un 4096 1
+==18117== Profiling result:
+"Device","Context","Stream","Kernel","local_load","local_store","gld_request","gst_request","shared_load","shared_store","branch","divergent_branch","active_cycles","inst_issued1_0","inst_issued2_0","inst_issued1_1","inst_issued2_1","inst_executed","warps_launched","threads_launched","thread_inst_executed_0","thread_inst_executed_2","thread_inst_executed_1","thread_inst_executed_3","active_warps","tex0_cache_sector_queries","tex0_cache_sector_misses","tex1_cache_sector_queries","tex1_cache_sector_misses","sm_cta_launched","l1_local_load_hit","l1_local_load_miss","l1_local_store_hit","l1_local_store_miss","l1_global_load_hit","l1_global_load_miss","uncached_global_load_transaction","global_store_transaction","l1_shared_bank_conflict","prof_trigger_00","prof_trigger_01","prof_trigger_02","prof_trigger_03","prof_trigger_04","prof_trigger_05","prof_trigger_06","prof_trigger_07","fb1_subp0_read_sectors","fb1_subp1_read_sectors","fb1_subp0_write_sectors","fb1_subp1_write_sectors","l2_subp0_write_sector_misses","l2_subp1_write_sector_misses","l2_subp0_read_sector_misses","l2_subp1_read_sector_misses","l2_subp0_write_sector_queries","l2_subp1_write_sector_queries","l2_subp0_read_sector_queries","l2_subp1_read_sector_queries","l2_subp0_read_tex_sector_queries","l2_subp1_read_tex_sector_queries","l2_subp0_read_hit_sectors","l2_subp1_read_hit_sectors","l2_subp0_read_tex_hit_sectors","l2_subp1_read_tex_hit_sectors","fb0_subp0_read_sectors","fb0_subp1_read_sectors","fb0_subp0_write_sectors","fb0_subp1_write_sectors","elapsed_cycles_sm","l2_subp0_read_sysmem_sector_queries","l2_subp1_read_sysmem_sector_queries","l2_subp0_write_sysmem_sector_queries","l2_subp1_write_sysmem_sector_queries","l2_subp0_total_read_sector_queries","l2_subp1_total_read_sector_queries","l2_subp0_total_write_sector_queries","l2_subp1_total_write_sector_queries","atom_count","gred_count","gld_inst_8bit","gld_inst_16bit","gld_inst_32bit","gld_inst_64bit","gld_inst_128bit","gst_inst_8bit","gst_inst_16bit","gst_inst_32bit","gst_inst_64bit","gst_inst_128bit"
+"GeForce GT 630 (1)","1","2","matMul(float*, float*, float*, int)",0,0,268435456,524288,2684354560,268435456,135266304,0,"<OVERFLOW>",6826890232,877396048,6826869392,877396048,6600261632,524288,16777216,77527515136,28076670976,77527515136,28076670976,"<OVERFLOW>",0,0,0,0,65536,0,0,0,0,3760521892,534526994,0,8388608,"<OVERFLOW>",0,0,0,0,0,0,0,0,201620455,201623684,779426,779509,1546708,1559283,403200528,403247779,4194304,4194304,1069917084,1069465172,0,0,666521260,666054232,0,0,201608544,201603148,774626,774139,"<OVERFLOW>",0,0,0,0,1069723852,1069414428,4194304,4194304,0,0,0,0,"<OVERFLOW>",0,0,0,0,16777216,0,0
+==18134== NVPROF is profiling process 18134, command: ./matMul-Sm-Un 8192 1
+==18134== Warning: Event "tex3_cache_sector_queries" cannot be found on device 1
+==18134== Warning: Event "fb_subp0_write_sectors" cannot be found on device 1
+==18134== Warning: Event "__l1_global_load_transactions" cannot be found on device 1
+==18134== Warning: Event "l2_subp3_write_sysmem_sector_queries" cannot be found on device 1
+==18134== Warning: Event "l1_shared_store_transactions" cannot be found on device 1
+==18134== Warning: Event "b_subp0_read_sectors" cannot be found on device 1
+==18134== Warning: Event "l2_subp1_write_l1_sector_queries" cannot be found on device 1
+==18134== Warning: Event "ld_inst_8bit" cannot be found on device 1
+==18134== Warning: Event "l2_subp2_read_sector_misses" cannot be found on device 1
+==18134== Warning: Event "l2_subp2_total_write_sector_queries" cannot be found on device 1
+==18134== Warning: Event "global_st_mem_divergence_replays" cannot be found on device 1
+==18134== Warning: Event "shared_load_replay" cannot be found on device 1
+==18134== Warning: Event "l2_subp2_total_read_sector_queries" cannot be found on device 1
+==18134== Warning: Event "l1_shared_load_transactions" cannot be found on device 1
+==18134== Warning: Event "l2_subp3_total_write_sector_queries" cannot be found on device 1
+==18134== Warning: Event "tex2_cache_sector_misses" cannot be found on device 1
+==18134== Warning: Event "inst_issued1" cannot be found on device 1
+==18134== Warning: Event "tex3_cache_sector_misses" cannot be found on device 1
+==18134== Warning: Event "shared_store_replay" cannot be found on device 1
+==18134== Warning: Event "l2_subp3_read_sysmem_sector_queries" cannot be found on device 1
+==18134== Warning: Event "l2_subp0_read_l1_hit_sectors" cannot be found on device 1
+==18134== Warning: Event "local_store_transactions" cannot be found on device 1
+==18134== Warning: Event "l2_subp3_write_l1_sector_queries" cannot be found on device 1
+==18134== Warning: Event "local_load_transactions" cannot be found on device 1
+==18134== Warning: Event "l2_subp2_read_l1_hit_sectors" cannot be found on device 1
+==18134== Warning: Event "l2_subp3_total_read_sector_queries" cannot be found on device 1
+==18134== Warning: Event "tex2_cache_sector_queries" cannot be found on device 1
+==18134== Warning: Event "l2_subp2_read_tex_hit_sectors" cannot be found on device 1
+==18134== Warning: Event "l2_subp0_write_l1_sector_queries" cannot be found on device 1
+==18134== Warning: Event "l2_subp2_read_sysmem_sector_queries" cannot be found on device 1
+==18134== Warning: Event "l2_subp3_read_tex_hit_sectors" cannot be found on device 1
+==18134== Warning: Event "__l1_global_store_transactions" cannot be found on device 1
+==18134== Warning: Event "l2_subp2_write_l1_sector_queries" cannot be found on device 1
+==18134== Warning: Event "fb_subp1_write_sectors" cannot be found on device 1
+==18134== Warning: Event "l2_subp2_read_l1_sector_queries" cannot be found on device 1
+==18134== Warning: Event "fb_subp1_read_sectors" cannot be found on device 1
+==18134== Warning: Event "l2_subp3_read_l1_hit_sectors" cannot be found on device 1
+==18134== Warning: Event "l2_subp2_write_sector_misses" cannot be found on device 1
+==18134== Warning: Event "l2_subp2_write_sysmem_sector_queries" cannot be found on device 1
+==18134== Warning: Event "l2_subp3_read_tex_sector_queries" cannot be found on device 1
+==18134== Warning: Event "l2_subp0_read_l1_sector_queries" cannot be found on device 1
+==18134== Warning: Event "l2_subp1_read_l1_hit_sectors" cannot be found on device 1
+==18134== Warning: Event "l2_subp3_read_l1_sector_queries" cannot be found on device 1
+==18134== Warning: Event "inst_issued2" cannot be found on device 1
+==18134== Warning: Event "l2_subp2_read_tex_sector_queries" cannot be found on device 1
+==18134== Warning: Event "l2_subp3_write_sector_misses" cannot be found on device 1
+==18134== Warning: Event "global_ld_mem_divergence_replays" cannot be found on device 1
+==18134== Warning: Event "l2_subp3_read_sector_misses" cannot be found on device 1
+==18134== Warning: Event "l2_subp1_read_l1_sector_queries" cannot be found on device 1
+==18134== Some kernel(s) will be replayed on device 1 in order to collect all events/metrics.
+==18496== NVPROF is profiling process 18496, command: ./matMul-Sm-Un 16384 1
+==18496== Warning: Event "l2_subp0_write_l1_sector_queries" cannot be found on device 1
+==18496== Warning: Event "tex2_cache_sector_misses" cannot be found on device 1
+==18496== Warning: Event "inst_issued2" cannot be found on device 1
+==18496== Warning: Event "l2_subp2_read_sector_misses" cannot be found on device 1
+==18496== Warning: Event "tex2_cache_sector_queries" cannot be found on device 1
+==18496== Warning: Event "local_store_transactions" cannot be found on device 1
+==18496== Warning: Event "l2_subp2_read_tex_sector_queries" cannot be found on device 1
+==18496== Warning: Event "global_st_mem_divergence_replays" cannot be found on device 1
+==18496== Warning: Event "b_subp0_read_sectors" cannot be found on device 1
+==18496== Warning: Event "l2_subp2_write_l1_sector_queries" cannot be found on device 1
+==18496== Warning: Event "ld_inst_8bit" cannot be found on device 1
+==18496== Warning: Event "l2_subp2_read_l1_sector_queries" cannot be found on device 1
+==18496== Warning: Event "__l1_global_store_transactions" cannot be found on device 1
+==18496== Warning: Event "shared_store_replay" cannot be found on device 1
+==18496== Warning: Event "l2_subp3_total_write_sector_queries" cannot be found on device 1
+==18496== Warning: Event "l2_subp2_read_tex_hit_sectors" cannot be found on device 1
+==18496== Warning: Event "l2_subp3_write_sector_misses" cannot be found on device 1
+==18496== Warning: Event "inst_issued1" cannot be found on device 1
+==18496== Warning: Event "l2_subp2_read_l1_hit_sectors" cannot be found on device 1
+==18496== Warning: Event "l2_subp1_write_l1_sector_queries" cannot be found on device 1
+==18496== Warning: Event "l2_subp1_read_l1_sector_queries" cannot be found on device 1
+==18496== Warning: Event "shared_load_replay" cannot be found on device 1
+==18496== Warning: Event "fb_subp0_write_sectors" cannot be found on device 1
+==18496== Warning: Event "l2_subp3_read_sector_misses" cannot be found on device 1
+==18496== Warning: Event "l2_subp2_write_sector_misses" cannot be found on device 1
+==18496== Warning: Event "l1_shared_store_transactions" cannot be found on device 1
+==18496== Warning: Event "tex3_cache_sector_misses" cannot be found on device 1
+==18496== Warning: Event "tex3_cache_sector_queries" cannot be found on device 1
+==18496== Warning: Event "l2_subp3_read_tex_sector_queries" cannot be found on device 1
+==18496== Warning: Event "fb_subp1_read_sectors" cannot be found on device 1
+==18496== Warning: Event "l2_subp3_read_l1_sector_queries" cannot be found on device 1
+==18496== Warning: Event "l2_subp2_total_write_sector_queries" cannot be found on device 1
+==18496== Warning: Event "l2_subp3_read_tex_hit_sectors" cannot be found on device 1
+==18496== Warning: Event "local_load_transactions" cannot be found on device 1
+==18496== Warning: Event "__l1_global_load_transactions" cannot be found on device 1
+==18496== Warning: Event "l2_subp3_write_l1_sector_queries" cannot be found on device 1
+==18496== Warning: Event "global_ld_mem_divergence_replays" cannot be found on device 1
+==18496== Warning: Event "l2_subp2_read_sysmem_sector_queries" cannot be found on device 1
+==18496== Warning: Event "l2_subp3_write_sysmem_sector_queries" cannot be found on device 1
+==18496== Warning: Event "l2_subp0_read_l1_hit_sectors" cannot be found on device 1
+==18496== Warning: Event "l2_subp2_write_sysmem_sector_queries" cannot be found on device 1
+==18496== Warning: Event "l2_subp2_total_read_sector_queries" cannot be found on device 1
+==18496== Warning: Event "l2_subp3_read_sysmem_sector_queries" cannot be found on device 1
+==18496== Warning: Event "l2_subp3_total_read_sector_queries" cannot be found on device 1
+==18496== Warning: Event "l2_subp1_read_l1_hit_sectors" cannot be found on device 1
+==18496== Warning: Event "l2_subp3_read_l1_hit_sectors" cannot be found on device 1
+==18496== Warning: Event "l1_shared_load_transactions" cannot be found on device 1
+==18496== Warning: Event "l2_subp0_read_l1_sector_queries" cannot be found on device 1
+==18496== Warning: Event "fb_subp1_write_sectors" cannot be found on device 1
+==18496== Some kernel(s) will be replayed on device 1 in order to collect all events/metrics.
+Internal profiler error (12884901895:999)
+==18496== Error: Internal profiling error 1719:999.
+======== Error: Application returned non-zero code 1

@@ -1,0 +1,192 @@
+==1121== NVPROF is profiling process 1121, command: ./matMul-Sm 128 1
+==1121== Profiling application: ./matMul-Sm 128 1
+==1121== Profiling result:
+Time(%)      Time     Calls       Avg       Min       Max  Name
+      %        ms                  ms        ms        ms  
+  52.61  0.027777         1  0.027777  0.027777  0.027777  matMul(float*, float*, float*, int)
+  47.39  0.025024         2  0.012512  0.012512  0.012512  [CUDA memcpy HtoD]
+
+==1121== API calls:
+Time(%)      Time     Calls       Avg       Min       Max  Name
+      %        ms                  ms        ms        ms  
+  99.07  310.6495         3  103.5498  5.71e-03  310.6363  cudaMalloc
+   0.56  1.761415       332  5.30e-03  5.40e-04  0.182521  cuDeviceGetAttribute
+   0.18  0.551129         1  0.551129  0.551129  0.551129  cudaDeviceReset
+   0.06  0.202063         4  0.050515  0.047139  0.054512  cuDeviceTotalMem
+   0.05  0.160454         4  0.040113  0.038864  0.041879  cuDeviceGetName
+   0.05  0.156064         2  0.078032  0.071943  0.084121  cudaMemcpy
+   0.01  0.028723         1  0.028723  0.028723  0.028723  cudaLaunch
+   0.00  0.012635         1  0.012635  0.012635  0.012635  cudaSetDevice
+   0.00  9.46e-03         1  9.46e-03  9.46e-03  9.46e-03  cudaProfilerStart
+   0.00  7.49e-03         4  1.87e-03  5.84e-04  5.47e-03  cudaSetupArgument
+   0.00  5.47e-03         8  6.83e-04  5.80e-04  1.15e-03  cuDeviceGet
+   0.00  2.77e-03         2  1.39e-03  6.44e-04  2.13e-03  cuDeviceGetCount
+   0.00  2.74e-03         1  2.74e-03  2.74e-03  2.74e-03  cudaConfigureCall
+==1132== NVPROF is profiling process 1132, command: ./matMul-Sm 256 1
+==1132== Profiling application: ./matMul-Sm 256 1
+==1132== Profiling result:
+Time(%)      Time     Calls       Avg       Min       Max  Name
+      %        ms                  ms        ms        ms  
+  64.97  0.171684         1  0.171684  0.171684  0.171684  matMul(float*, float*, float*, int)
+  35.03  0.092547         2  0.046273  0.046210  0.046337  [CUDA memcpy HtoD]
+
+==1132== API calls:
+Time(%)      Time     Calls       Avg       Min       Max  Name
+      %        ms                  ms        ms        ms  
+  99.10  331.9032         3  110.6344  5.70e-03  331.8896  cudaMalloc
+   0.53  1.763620       332  5.31e-03  5.44e-04  0.182941  cuDeviceGetAttribute
+   0.16  0.535865         1  0.535865  0.535865  0.535865  cudaDeviceReset
+   0.08  0.256894         2  0.128447  0.118169  0.138725  cudaMemcpy
+   0.07  0.223361         4  0.055840  0.047627  0.073612  cuDeviceTotalMem
+   0.05  0.159054         4  0.039763  0.038478  0.042137  cuDeviceGetName
+   0.01  0.029154         1  0.029154  0.029154  0.029154  cudaLaunch
+   0.00  0.011960         1  0.011960  0.011960  0.011960  cudaSetDevice
+   0.00  0.010056         1  0.010056  0.010056  0.010056  cudaProfilerStart
+   0.00  8.30e-03         4  2.07e-03  5.94e-04  5.96e-03  cudaSetupArgument
+   0.00  6.85e-03         8  8.56e-04  5.63e-04  2.29e-03  cuDeviceGet
+   0.00  2.83e-03         2  1.41e-03  7.66e-04  2.06e-03  cuDeviceGetCount
+   0.00  2.60e-03         1  2.60e-03  2.60e-03  2.60e-03  cudaConfigureCall
+==1141== NVPROF is profiling process 1141, command: ./matMul-Sm 512 1
+==1141== Profiling application: ./matMul-Sm 512 1
+==1141== Profiling result:
+Time(%)      Time     Calls       Avg       Min       Max  Name
+      %        ms                  ms        ms        ms  
+  78.85  1.316673         1  1.316673  1.316673  1.316673  matMul(float*, float*, float*, int)
+  21.15  0.353257         2  0.176628  0.176356  0.176901  [CUDA memcpy HtoD]
+
+==1141== API calls:
+Time(%)      Time     Calls       Avg       Min       Max  Name
+      %        ms                  ms        ms        ms  
+  98.64  308.8124         3  102.9375  0.122559  308.5656  cudaMalloc
+   0.57  1.776266       332  5.35e-03  5.40e-04  0.195828  cuDeviceGetAttribute
+   0.36  1.142207         1  1.142207  1.142207  1.142207  cudaDeviceReset
+   0.29  0.908709         2  0.454354  0.379468  0.529241  cudaMemcpy
+   0.07  0.203923         4  0.050980  0.047036  0.056884  cuDeviceTotalMem
+   0.05  0.164208         4  0.041052  0.040461  0.042071  cuDeviceGetName
+   0.01  0.028567         1  0.028567  0.028567  0.028567  cudaLaunch
+   0.00  0.011715         1  0.011715  0.011715  0.011715  cudaSetDevice
+   0.00  0.010176         1  0.010176  0.010176  0.010176  cudaProfilerStart
+   0.00  7.61e-03         4  1.90e-03  6.02e-04  5.57e-03  cudaSetupArgument
+   0.00  5.01e-03         8  6.26e-04  5.56e-04  8.54e-04  cuDeviceGet
+   0.00  2.80e-03         2  1.40e-03  6.28e-04  2.18e-03  cuDeviceGetCount
+   0.00  2.72e-03         1  2.72e-03  2.72e-03  2.72e-03  cudaConfigureCall
+==1152== NVPROF is profiling process 1152, command: ./matMul-Sm 1024 1
+==1152== Profiling application: ./matMul-Sm 1024 1
+==1152== Profiling result:
+Time(%)      Time     Calls       Avg       Min       Max  Name
+      %        ms                  ms        ms        ms  
+  81.65  10.72521         1  10.72521  10.72521  10.72521  matMul(float*, float*, float*, int)
+  18.35  2.410936         2  1.205468  1.205020  1.205916  [CUDA memcpy HtoD]
+
+==1152== API calls:
+Time(%)      Time     Calls       Avg       Min       Max  Name
+      %        ms                  ms        ms        ms  
+  98.22  316.6242         3  105.5414  0.130056  316.3624  cudaMalloc
+   0.93  2.988995         2  1.494497  1.403676  1.585319  cudaMemcpy
+   0.55  1.780967       332  5.36e-03  5.42e-04  0.190760  cuDeviceGetAttribute
+   0.16  0.527592         1  0.527592  0.527592  0.527592  cudaDeviceReset
+   0.06  0.204914         4  0.051228  0.049441  0.053884  cuDeviceTotalMem
+   0.05  0.159739         4  0.039934  0.037335  0.043371  cuDeviceGetName
+   0.01  0.029414         1  0.029414  0.029414  0.029414  cudaLaunch
+   0.00  0.010912         1  0.010912  0.010912  0.010912  cudaProfilerStart
+   0.00  0.010578         1  0.010578  0.010578  0.010578  cudaSetDevice
+   0.00  7.78e-03         4  1.95e-03  5.79e-04  5.52e-03  cudaSetupArgument
+   0.00  4.94e-03         8  6.18e-04  5.66e-04  7.63e-04  cuDeviceGet
+   0.00  2.78e-03         1  2.78e-03  2.78e-03  2.78e-03  cudaConfigureCall
+   0.00  2.66e-03         2  1.33e-03  6.26e-04  2.03e-03  cuDeviceGetCount
+==1161== NVPROF is profiling process 1161, command: ./matMul-Sm 2048 1
+==1161== Profiling application: ./matMul-Sm 2048 1
+==1161== Profiling result:
+Time(%)      Time     Calls       Avg       Min       Max  Name
+      %        ms                  ms        ms        ms  
+  89.51  85.47750         1  85.47750  85.47750  85.47750  matMul(float*, float*, float*, int)
+  10.49  10.01517         2  5.007586  4.995570  5.019602  [CUDA memcpy HtoD]
+
+==1161== API calls:
+Time(%)      Time     Calls       Avg       Min       Max  Name
+      %        ms                  ms        ms        ms  
+  95.87  308.4046         3  102.8015  0.136354  308.1222  cudaMalloc
+   3.27  10.52753         2  5.263765  5.203885  5.323645  cudaMemcpy
+   0.55  1.760977       332  5.30e-03  5.44e-04  0.183676  cuDeviceGetAttribute
+   0.17  0.558921         1  0.558921  0.558921  0.558921  cudaDeviceReset
+   0.06  0.201071         4  0.050267  0.047096  0.054088  cuDeviceTotalMem
+   0.05  0.159973         4  0.039993  0.038576  0.041980  cuDeviceGetName
+   0.01  0.042582         1  0.042582  0.042582  0.042582  cudaLaunch
+   0.00  0.015132         1  0.015132  0.015132  0.015132  cudaProfilerStart
+   0.00  0.011912         1  0.011912  0.011912  0.011912  cudaSetDevice
+   0.00  9.99e-03         4  2.50e-03  5.92e-04  7.33e-03  cudaSetupArgument
+   0.00  5.11e-03         8  6.39e-04  5.51e-04  9.84e-04  cuDeviceGet
+   0.00  2.71e-03         1  2.71e-03  2.71e-03  2.71e-03  cudaConfigureCall
+   0.00  2.59e-03         2  1.29e-03  7.63e-04  1.82e-03  cuDeviceGetCount
+==1170== NVPROF is profiling process 1170, command: ./matMul-Sm 4096 1
+==1170== Profiling application: ./matMul-Sm 4096 1
+==1170== Profiling result:
+Time(%)      Time     Calls       Avg       Min       Max  Name
+      %        ms                  ms        ms        ms  
+  90.36  681.0017         1  681.0017  681.0017  681.0017  matMul(float*, float*, float*, int)
+   9.64  72.64836         2  36.32418  35.54295  37.10542  [CUDA memcpy HtoD]
+
+==1170== API calls:
+Time(%)      Time     Calls       Avg       Min       Max  Name
+      %        ms                  ms        ms        ms  
+  79.95  309.4845         3  103.1615  0.154412  309.1677  cudaMalloc
+  19.17  74.21998         2  37.10999  36.25891  37.96107  cudaMemcpy
+   0.46  1.775826       332  5.35e-03  5.42e-04  0.195645  cuDeviceGetAttribute
+   0.29  1.130710         1  1.130710  1.130710  1.130710  cudaDeviceReset
+   0.05  0.203902         4  0.050975  0.046932  0.056771  cuDeviceTotalMem
+   0.04  0.161338         4  0.040334  0.037246  0.043152  cuDeviceGetName
+   0.02  0.059343         1  0.059343  0.059343  0.059343  cudaLaunch
+   0.01  0.022318         1  0.022318  0.022318  0.022318  cudaProfilerStart
+   0.00  0.012759         4  3.19e-03  6.71e-04  0.010091  cudaSetupArgument
+   0.00  0.010620         1  0.010620  0.010620  0.010620  cudaSetDevice
+   0.00  6.98e-03         8  8.73e-04  5.59e-04  2.34e-03  cuDeviceGet
+   0.00  5.13e-03         1  5.13e-03  5.13e-03  5.13e-03  cudaConfigureCall
+   0.00  2.52e-03         2  1.26e-03  6.20e-04  1.90e-03  cuDeviceGetCount
+==1179== NVPROF is profiling process 1179, command: ./matMul-Sm 8192 1
+==1179== Profiling application: ./matMul-Sm 8192 1
+==1179== Profiling result:
+Time(%)      Time     Calls       Avg       Min       Max  Name
+      %        ms                  ms        ms        ms  
+  97.05  5.40e+03         1  5.40e+03  5.40e+03  5.40e+03  matMul(float*, float*, float*, int)
+   2.95  164.3616         2  82.18082  81.93091  82.43073  [CUDA memcpy HtoD]
+
+==1179== API calls:
+Time(%)      Time     Calls       Avg       Min       Max  Name
+      %        ms                  ms        ms        ms  
+  64.27  303.3728         3  101.1243  0.258939  302.8544  cudaMalloc
+  35.01  165.2763         2  82.63813  82.62235  82.65391  cudaMemcpy
+   0.49  2.326665       332  7.01e-03  5.41e-04  0.718311  cuDeviceGetAttribute
+   0.12  0.557955         1  0.557955  0.557955  0.557955  cudaDeviceReset
+   0.04  0.205744         4  0.051436  0.047384  0.056434  cuDeviceTotalMem
+   0.03  0.160741         4  0.040185  0.038714  0.041654  cuDeviceGetName
+   0.01  0.058908         1  0.058908  0.058908  0.058908  cudaLaunch
+   0.00  0.022592         1  0.022592  0.022592  0.022592  cudaProfilerStart
+   0.00  0.012930         4  3.23e-03  6.30e-04  9.89e-03  cudaSetupArgument
+   0.00  0.012023         1  0.012023  0.012023  0.012023  cudaSetDevice
+   0.00  5.18e-03         8  6.48e-04  5.66e-04  9.09e-04  cuDeviceGet
+   0.00  4.79e-03         1  4.79e-03  4.79e-03  4.79e-03  cudaConfigureCall
+   0.00  2.96e-03         2  1.48e-03  7.40e-04  2.21e-03  cuDeviceGetCount
+==1188== NVPROF is profiling process 1188, command: ./matMul-Sm 16384 1
+==1188== Profiling application: ./matMul-Sm 16384 1
+==1188== Profiling result:
+Time(%)      Time     Calls       Avg       Min       Max  Name
+      %        ms                  ms        ms        ms  
+  98.14  4.28e+04         1  4.28e+04  4.28e+04  4.28e+04  matMul(float*, float*, float*, int)
+   1.86  809.8485         2  404.9243  347.8809  461.9676  [CUDA memcpy HtoD]
+
+==1188== API calls:
+Time(%)      Time     Calls       Avg       Min       Max  Name
+      %        ms                  ms        ms        ms  
+  71.70  811.3397         2  405.6699  348.6518  462.6880  cudaMemcpy
+  28.05  317.3769         3  105.7923  0.653617  315.8453  cudaMalloc
+   0.16  1.767048       332  5.32e-03  5.44e-04  0.186548  cuDeviceGetAttribute
+   0.05  0.522056         1  0.522056  0.522056  0.522056  cudaDeviceReset
+   0.02  0.208033         4  0.052008  0.050672  0.053285  cuDeviceTotalMem
+   0.01  0.156485         4  0.039121  0.037288  0.043261  cuDeviceGetName
+   0.01  0.068331         1  0.068331  0.068331  0.068331  cudaLaunch
+   0.00  0.022930         1  0.022930  0.022930  0.022930  cudaProfilerStart
+   0.00  0.014742         4  3.68e-03  5.88e-04  0.011572  cudaSetupArgument
+   0.00  8.89e-03         1  8.89e-03  8.89e-03  8.89e-03  cudaSetDevice
+   0.00  5.55e-03         1  5.55e-03  5.55e-03  5.55e-03  cudaConfigureCall
+   0.00  5.04e-03         8  6.29e-04  5.49e-04  7.93e-04  cuDeviceGet
+   0.00  2.79e-03         2  1.40e-03  6.48e-04  2.14e-03  cuDeviceGetCount

@@ -1,0 +1,51 @@
+==7057== NVPROF is profiling process 7057, command: ./matSum-gpu-Un 128 8 0
+==7057== Profiling application: ./matSum-gpu-Un 128 8 0
+==7057== Profiling result:
+Time(%)      Time     Calls       Avg       Min       Max  Name
+      %        ms                  ms        ms        ms  
+  76.49  0.019264         2  9.63e-03  8.90e-03  0.010368  [CUDA memcpy HtoD]
+  23.51  5.92e-03         1  5.92e-03  5.92e-03  5.92e-03  matSum(float*, float*, float*, int)
+==7067== NVPROF is profiling process 7067, command: ./matSum-gpu-Un 256 8 0
+==7067== Profiling application: ./matSum-gpu-Un 256 8 0
+==7067== Profiling result:
+Time(%)      Time     Calls       Avg       Min       Max  Name
+      %        ms                  ms        ms        ms  
+  80.60  0.083776         2  0.041888  0.041888  0.041888  [CUDA memcpy HtoD]
+  19.40  0.020160         1  0.020160  0.020160  0.020160  matSum(float*, float*, float*, int)
+==7077== NVPROF is profiling process 7077, command: ./matSum-gpu-Un 512 8 0
+==7077== Profiling application: ./matSum-gpu-Un 512 8 0
+==7077== Profiling result:
+Time(%)      Time     Calls       Avg       Min       Max  Name
+      %        ms                  ms        ms        ms  
+  79.62  0.325216         2  0.162608  0.162528  0.162688  [CUDA memcpy HtoD]
+  20.38  0.083232         1  0.083232  0.083232  0.083232  matSum(float*, float*, float*, int)
+==7087== NVPROF is profiling process 7087, command: ./matSum-gpu-Un 1024 8 0
+==7087== Profiling application: ./matSum-gpu-Un 1024 8 0
+==7087== Profiling result:
+Time(%)      Time     Calls       Avg       Min       Max  Name
+      %        ms                  ms        ms        ms  
+  79.77  1.406784         2  0.703392  0.695968  0.710816  [CUDA memcpy HtoD]
+  20.23  0.356704         1  0.356704  0.356704  0.356704  matSum(float*, float*, float*, int)
+==7098== NVPROF is profiling process 7098, command: ./matSum-gpu-Un 2048 8 0
+==7098== Profiling application: ./matSum-gpu-Un 2048 8 0
+==7098== Profiling result:
+Time(%)      Time     Calls       Avg       Min       Max  Name
+      %        ms                  ms        ms        ms  
+  78.52  5.573312         2  2.786656  2.761120  2.812192  [CUDA memcpy HtoD]
+  21.48  1.524512         1  1.524512  1.524512  1.524512  matSum(float*, float*, float*, int)
+==7108== NVPROF is profiling process 7108, command: ./matSum-gpu-Un 4096 8 0
+==7108== Profiling application: ./matSum-gpu-Un 4096 8 0
+==7108== Profiling result:
+Time(%)      Time     Calls       Avg       Min       Max  Name
+      %        ms                  ms        ms        ms  
+  74.74  22.01837         2  11.00918  10.88310  11.13526  [CUDA memcpy HtoD]
+  25.26  7.442752         1  7.442752  7.442752  7.442752  matSum(float*, float*, float*, int)
+==7118== NVPROF is profiling process 7118, command: ./matSum-gpu-Un 8192 8 0
+==7118== Profiling application: ./matSum-gpu-Un 8192 8 0
+==7118== Profiling result:
+Time(%)      Time     Calls       Avg       Min       Max  Name
+      %        ms                  ms        ms        ms  
+  67.76  88.19923         2  44.09962  44.02029  44.17894  [CUDA memcpy HtoD]
+  32.24  41.96400         1  41.96400  41.96400  41.96400  matSum(float*, float*, float*, int)
+==7128== NVPROF is profiling process 7128, command: ./matSum-gpu-Un 16384 8 0
+==7128== Error: Internal profiling error 1749:999.

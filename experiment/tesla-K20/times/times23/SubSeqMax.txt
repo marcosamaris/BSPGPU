@@ -1,0 +1,348 @@
+==3521== NVPROF is profiling process 3521, command: ./SubSeqMax 131072 1
+==3521== Profiling application: ./SubSeqMax 131072 1
+==3521== Profiling result:
+Time(%)      Time     Calls       Avg       Min       Max  Name
+      %        ms                  ms        ms        ms  
+  52.37  0.102402         1  0.102402  0.102402  0.102402  subSeqMax(int*, int*, int, int)
+  46.22  0.090370         1  0.090370  0.090370  0.090370  [CUDA memcpy HtoD]
+   1.41  2.75e-03         1  2.75e-03  2.75e-03  2.75e-03  [CUDA memcpy DtoH]
+
+==3521== API calls:
+Time(%)      Time     Calls       Avg       Min       Max  Name
+      %        ms                  ms        ms        ms  
+  98.98  321.7759         2  160.8879  0.133021  321.6429  cudaMalloc
+   0.56  1.808954       332  5.45e-03  5.42e-04  0.193469  cuDeviceGetAttribute
+   0.12  0.402456         1  0.402456  0.402456  0.402456  cudaGetDeviceProperties
+   0.09  0.300174         2  0.150087  0.133866  0.166308  cudaFree
+   0.07  0.231168         2  0.115584  0.029102  0.202066  cudaMemcpy
+   0.06  0.209976         4  0.052494  0.049360  0.055226  cuDeviceTotalMem
+   0.05  0.163395         4  0.040848  0.038752  0.042405  cuDeviceGetName
+   0.04  0.140533         1  0.140533  0.140533  0.140533  cudaEventSynchronize
+   0.01  0.027079         1  0.027079  0.027079  0.027079  cudaLaunch
+   0.00  0.010159         1  0.010159  0.010159  0.010159  cudaSetDevice
+   0.00  9.09e-03         2  4.54e-03  1.50e-03  7.59e-03  cudaEventCreate
+   0.00  8.49e-03         2  4.24e-03  3.45e-03  5.03e-03  cudaEventRecord
+   0.00  5.29e-03         8  6.61e-04  5.80e-04  1.03e-03  cuDeviceGet
+   0.00  3.88e-03         4  9.69e-04  5.67e-04  1.77e-03  cudaSetupArgument
+   0.00  3.87e-03         1  3.87e-03  3.87e-03  3.87e-03  cudaEventElapsedTime
+   0.00  2.60e-03         2  1.30e-03  6.16e-04  1.98e-03  cuDeviceGetCount
+   0.00  1.69e-03         1  1.69e-03  1.69e-03  1.69e-03  cudaConfigureCall
+==3531== NVPROF is profiling process 3531, command: ./SubSeqMax 262144 1
+==3531== Profiling application: ./SubSeqMax 262144 1
+==3531== Profiling result:
+Time(%)      Time     Calls       Avg       Min       Max  Name
+      %        ms                  ms        ms        ms  
+  50.42  0.176708         1  0.176708  0.176708  0.176708  [CUDA memcpy HtoD]
+  48.79  0.170980         1  0.170980  0.170980  0.170980  subSeqMax(int*, int*, int, int)
+   0.79  2.75e-03         1  2.75e-03  2.75e-03  2.75e-03  [CUDA memcpy DtoH]
+
+==3531== API calls:
+Time(%)      Time     Calls       Avg       Min       Max  Name
+      %        ms                  ms        ms        ms  
+  98.86  315.9708         2  157.9854  0.123927  315.8469  cudaMalloc
+   0.55  1.770512       332  5.33e-03  5.42e-04  0.182798  cuDeviceGetAttribute
+   0.13  0.405493         1  0.405493  0.405493  0.405493  cudaGetDeviceProperties
+   0.13  0.404513         2  0.202256  0.031355  0.373158  cudaMemcpy
+   0.10  0.316414         2  0.158207  0.128431  0.187983  cudaFree
+   0.09  0.288984         1  0.288984  0.288984  0.288984  cudaEventSynchronize
+   0.06  0.203083         4  0.050770  0.047985  0.054524  cuDeviceTotalMem
+   0.05  0.169687         4  0.042421  0.038360  0.053927  cuDeviceGetName
+   0.01  0.027279         1  0.027279  0.027279  0.027279  cudaLaunch
+   0.00  0.014571         2  7.28e-03  1.51e-03  0.013058  cudaEventCreate
+   0.00  9.30e-03         1  9.30e-03  9.30e-03  9.30e-03  cudaSetDevice
+   0.00  9.11e-03         2  4.55e-03  3.31e-03  5.80e-03  cudaEventRecord
+   0.00  5.26e-03         8  6.58e-04  5.76e-04  9.89e-04  cuDeviceGet
+   0.00  4.45e-03         4  1.11e-03  5.80e-04  2.49e-03  cudaSetupArgument
+   0.00  3.18e-03         1  3.18e-03  3.18e-03  3.18e-03  cudaEventElapsedTime
+   0.00  2.60e-03         2  1.30e-03  6.19e-04  1.98e-03  cuDeviceGetCount
+   0.00  1.73e-03         1  1.73e-03  1.73e-03  1.73e-03  cudaConfigureCall
+==3540== NVPROF is profiling process 3540, command: ./SubSeqMax 524288 1
+==3540== Profiling application: ./SubSeqMax 524288 1
+==3540== Profiling result:
+Time(%)      Time     Calls       Avg       Min       Max  Name
+      %        ms                  ms        ms        ms  
+  59.33  0.499275         1  0.499275  0.499275  0.499275  [CUDA memcpy HtoD]
+  40.34  0.339496         1  0.339496  0.339496  0.339496  subSeqMax(int*, int*, int, int)
+   0.33  2.82e-03         1  2.82e-03  2.82e-03  2.82e-03  [CUDA memcpy DtoH]
+
+==3540== API calls:
+Time(%)      Time     Calls       Avg       Min       Max  Name
+      %        ms                  ms        ms        ms  
+  98.66  305.9460         2  152.9730  0.127104  305.8189  cudaMalloc
+   0.59  1.838153       332  5.54e-03  5.57e-04  0.200426  cuDeviceGetAttribute
+   0.23  0.708258         2  0.354129  0.029001  0.679257  cudaMemcpy
+   0.15  0.461193         1  0.461193  0.461193  0.461193  cudaEventSynchronize
+   0.14  0.432052         1  0.432052  0.432052  0.432052  cudaGetDeviceProperties
+   0.09  0.292924         2  0.146462  0.128368  0.164556  cudaFree
+   0.07  0.203631         4  0.050907  0.049442  0.052186  cuDeviceTotalMem
+   0.05  0.157172         4  0.039293  0.037496  0.043152  cuDeviceGetName
+   0.01  0.027032         1  0.027032  0.027032  0.027032  cudaLaunch
+   0.00  0.010567         1  0.010567  0.010567  0.010567  cudaSetDevice
+   0.00  9.29e-03         2  4.64e-03  1.45e-03  7.84e-03  cudaEventCreate
+   0.00  7.62e-03         2  3.81e-03  2.97e-03  4.65e-03  cudaEventRecord
+   0.00  5.25e-03         1  5.25e-03  5.25e-03  5.25e-03  cudaEventElapsedTime
+   0.00  5.10e-03         8  6.38e-04  5.73e-04  8.11e-04  cuDeviceGet
+   0.00  3.99e-03         4  9.97e-04  5.84e-04  1.86e-03  cudaSetupArgument
+   0.00  3.42e-03         2  1.71e-03  6.15e-04  2.80e-03  cuDeviceGetCount
+   0.00  2.16e-03         1  2.16e-03  2.16e-03  2.16e-03  cudaConfigureCall
+==3549== NVPROF is profiling process 3549, command: ./SubSeqMax 1048576 1
+==3549== Profiling application: ./SubSeqMax 1048576 1
+==3549== Profiling result:
+Time(%)      Time     Calls       Avg       Min       Max  Name
+      %        ms                  ms        ms        ms  
+  64.38  1.199707         1  1.199707  1.199707  1.199707  [CUDA memcpy HtoD]
+  35.47  0.661006         1  0.661006  0.661006  0.661006  subSeqMax(int*, int*, int, int)
+   0.15  2.82e-03         1  2.82e-03  2.82e-03  2.82e-03  [CUDA memcpy DtoH]
+
+==3549== API calls:
+Time(%)      Time     Calls       Avg       Min       Max  Name
+      %        ms                  ms        ms        ms  
+  98.36  315.4083         2  157.7042  0.123916  315.2844  cudaMalloc
+   0.58  1.846436       332  5.56e-03  5.44e-04  0.200715  cuDeviceGetAttribute
+   0.45  1.434084         2  0.717042  0.030190  1.403894  cudaMemcpy
+   0.24  0.779347         1  0.779347  0.779347  0.779347  cudaEventSynchronize
+   0.13  0.420053         1  0.420053  0.420053  0.420053  cudaGetDeviceProperties
+   0.10  0.314547         2  0.157273  0.131778  0.182769  cudaFree
+   0.07  0.210924         4  0.052731  0.050239  0.055270  cuDeviceTotalMem
+   0.05  0.164859         4  0.041214  0.038350  0.044520  cuDeviceGetName
+   0.01  0.026983         1  0.026983  0.026983  0.026983  cudaLaunch
+   0.00  0.011752         2  5.88e-03  4.17e-03  7.58e-03  cudaEventCreate
+   0.00  9.36e-03         1  9.36e-03  9.36e-03  9.36e-03  cudaSetDevice
+   0.00  8.03e-03         2  4.01e-03  2.88e-03  5.15e-03  cudaEventRecord
+   0.00  5.31e-03         8  6.63e-04  5.82e-04  8.64e-04  cuDeviceGet
+   0.00  4.55e-03         4  1.14e-03  6.02e-04  2.20e-03  cudaSetupArgument
+   0.00  3.90e-03         1  3.90e-03  3.90e-03  3.90e-03  cudaEventElapsedTime
+   0.00  2.75e-03         2  1.37e-03  6.46e-04  2.10e-03  cuDeviceGetCount
+   0.00  1.93e-03         1  1.93e-03  1.93e-03  1.93e-03  cudaConfigureCall
+==3558== NVPROF is profiling process 3558, command: ./SubSeqMax 2097152 1
+==3558== Profiling application: ./SubSeqMax 2097152 1
+==3558== Profiling result:
+Time(%)      Time     Calls       Avg       Min       Max  Name
+      %        ms                  ms        ms        ms  
+  65.35  2.441144         1  2.441144  2.441144  2.441144  [CUDA memcpy HtoD]
+  34.57  1.291230         1  1.291230  1.291230  1.291230  subSeqMax(int*, int*, int, int)
+   0.08  3.10e-03         1  3.10e-03  3.10e-03  3.10e-03  [CUDA memcpy DtoH]
+
+==3558== API calls:
+Time(%)      Time     Calls       Avg       Min       Max  Name
+      %        ms                  ms        ms        ms  
+  97.89  323.6643         2  161.8322  0.155557  323.5088  cudaMalloc
+   0.80  2.653201         2  1.326600  0.030654  2.622547  cudaMemcpy
+   0.53  1.760834       332  5.30e-03  5.45e-04  0.182656  cuDeviceGetAttribute
+   0.42  1.404440         1  1.404440  1.404440  1.404440  cudaEventSynchronize
+   0.12  0.411279         1  0.411279  0.411279  0.411279  cudaGetDeviceProperties
+   0.09  0.298994         2  0.149497  0.131319  0.167675  cudaFree
+   0.06  0.203504         4  0.050876  0.046908  0.054387  cuDeviceTotalMem
+   0.05  0.157875         4  0.039468  0.038480  0.042232  cuDeviceGetName
+   0.01  0.028384         1  0.028384  0.028384  0.028384  cudaLaunch
+   0.00  0.012889         2  6.44e-03  1.40e-03  0.011485  cudaEventCreate
+   0.00  9.33e-03         1  9.33e-03  9.33e-03  9.33e-03  cudaSetDevice
+   0.00  8.12e-03         2  4.06e-03  2.91e-03  5.21e-03  cudaEventRecord
+   0.00  5.31e-03         8  6.63e-04  5.74e-04  9.61e-04  cuDeviceGet
+   0.00  4.28e-03         4  1.07e-03  5.72e-04  2.17e-03  cudaSetupArgument
+   0.00  3.25e-03         1  3.25e-03  3.25e-03  3.25e-03  cudaEventElapsedTime
+   0.00  2.74e-03         2  1.37e-03  7.37e-04  2.00e-03  cuDeviceGetCount
+   0.00  2.35e-03         1  2.35e-03  2.35e-03  2.35e-03  cudaConfigureCall
+==3567== NVPROF is profiling process 3567, command: ./SubSeqMax 4194304 1
+==3567== Profiling application: ./SubSeqMax 4194304 1
+==3567== Profiling result:
+Time(%)      Time     Calls       Avg       Min       Max  Name
+      %        ms                  ms        ms        ms  
+  66.52  5.064270         1  5.064270  5.064270  5.064270  [CUDA memcpy HtoD]
+  33.44  2.546039         1  2.546039  2.546039  2.546039  subSeqMax(int*, int*, int, int)
+   0.04  3.01e-03         1  3.01e-03  3.01e-03  3.01e-03  [CUDA memcpy DtoH]
+
+==3567== API calls:
+Time(%)      Time     Calls       Avg       Min       Max  Name
+      %        ms                  ms        ms        ms  
+  96.80  335.1245         2  167.5622  0.125044  334.9994  cudaMalloc
+   1.53  5.279656         2  2.639828  0.031174  5.248482  cudaMemcpy
+   0.77  2.656453         1  2.656453  2.656453  2.656453  cudaEventSynchronize
+   0.57  1.965491       332  5.92e-03  5.42e-04  0.301473  cuDeviceGetAttribute
+   0.11  0.394972         1  0.394972  0.394972  0.394972  cudaGetDeviceProperties
+   0.09  0.317187         2  0.158593  0.133146  0.184041  cudaFree
+   0.06  0.208204         4  0.052051  0.048851  0.054867  cuDeviceTotalMem
+   0.05  0.160807         4  0.040201  0.038872  0.042787  cuDeviceGetName
+   0.01  0.030899         1  0.030899  0.030899  0.030899  cudaLaunch
+   0.00  0.014436         2  7.22e-03  1.80e-03  0.012640  cudaEventCreate
+   0.00  0.010655         1  0.010655  0.010655  0.010655  cudaSetDevice
+   0.00  8.64e-03         2  4.32e-03  3.41e-03  5.24e-03  cudaEventRecord
+   0.00  7.28e-03         8  9.09e-04  6.01e-04  2.28e-03  cuDeviceGet
+   0.00  4.53e-03         4  1.13e-03  5.64e-04  2.14e-03  cudaSetupArgument
+   0.00  3.94e-03         1  3.94e-03  3.94e-03  3.94e-03  cudaEventElapsedTime
+   0.00  2.91e-03         2  1.45e-03  9.70e-04  1.94e-03  cuDeviceGetCount
+   0.00  1.91e-03         1  1.91e-03  1.91e-03  1.91e-03  cudaConfigureCall
+==3577== NVPROF is profiling process 3577, command: ./SubSeqMax 8388608 1
+==3577== Profiling application: ./SubSeqMax 8388608 1
+==3577== Profiling result:
+Time(%)      Time     Calls       Avg       Min       Max  Name
+      %        ms                  ms        ms        ms  
+  67.99  10.74091         1  10.74091  10.74091  10.74091  [CUDA memcpy HtoD]
+  31.99  5.054608         1  5.054608  5.054608  5.054608  subSeqMax(int*, int*, int, int)
+   0.02  2.98e-03         1  2.98e-03  2.98e-03  2.98e-03  [CUDA memcpy DtoH]
+
+==3577== API calls:
+Time(%)      Time     Calls       Avg       Min       Max  Name
+      %        ms                  ms        ms        ms  
+  93.94  297.4695         2  148.7348  0.601813  296.8677  cudaMalloc
+   3.47  10.98793         2  5.493963  0.038449  10.94948  cudaMemcpy
+   1.62  5.131431         1  5.131431  5.131431  5.131431  cudaEventSynchronize
+   0.57  1.790251       332  5.39e-03  5.41e-04  0.196232  cuDeviceGetAttribute
+   0.13  0.401308         2  0.200654  0.145753  0.255555  cudaFree
+   0.13  0.397300         1  0.397300  0.397300  0.397300  cudaGetDeviceProperties
+   0.07  0.206944         4  0.051736  0.047564  0.054670  cuDeviceTotalMem
+   0.05  0.157428         4  0.039357  0.037758  0.041893  cuDeviceGetName
+   0.02  0.049911         1  0.049911  0.049911  0.049911  cudaLaunch
+   0.01  0.019439         2  9.72e-03  6.64e-03  0.012796  cudaEventCreate
+   0.00  0.010730         2  5.36e-03  3.24e-03  7.49e-03  cudaEventRecord
+   0.00  0.010175         1  0.010175  0.010175  0.010175  cudaSetDevice
+   0.00  5.34e-03         8  6.67e-04  5.54e-04  1.03e-03  cuDeviceGet
+   0.00  4.45e-03         4  1.11e-03  6.36e-04  2.13e-03  cudaSetupArgument
+   0.00  3.75e-03         1  3.75e-03  3.75e-03  3.75e-03  cudaEventElapsedTime
+   0.00  2.71e-03         2  1.35e-03  6.06e-04  2.10e-03  cuDeviceGetCount
+   0.00  1.85e-03         1  1.85e-03  1.85e-03  1.85e-03  cudaConfigureCall
+==3586== NVPROF is profiling process 3586, command: ./SubSeqMax 16777216 1
+==3586== Profiling application: ./SubSeqMax 16777216 1
+==3586== Profiling result:
+Time(%)      Time     Calls       Avg       Min       Max  Name
+      %        ms                  ms        ms        ms  
+  68.23  21.63935         1  21.63935  21.63935  21.63935  [CUDA memcpy HtoD]
+  31.76  10.07424         1  10.07424  10.07424  10.07424  subSeqMax(int*, int*, int, int)
+   0.01  3.04e-03         1  3.04e-03  3.04e-03  3.04e-03  [CUDA memcpy DtoH]
+
+==3586== API calls:
+Time(%)      Time     Calls       Avg       Min       Max  Name
+      %        ms                  ms        ms        ms  
+  90.00  321.8231         2  160.9115  0.132461  321.6906  cudaMalloc
+   6.28  22.47013         2  11.23507  0.042898  22.42723  cudaMemcpy
+   2.82  10.08602         1  10.08602  10.08602  10.08602  cudaEventSynchronize
+   0.51  1.819650       332  5.48e-03  5.45e-04  0.186917  cuDeviceGetAttribute
+   0.13  0.460471         2  0.230235  0.169880  0.290591  cudaFree
+   0.12  0.422775         1  0.422775  0.422775  0.422775  cudaGetDeviceProperties
+   0.06  0.208802         4  0.052200  0.049471  0.055156  cuDeviceTotalMem
+   0.05  0.167546         4  0.041886  0.040052  0.042809  cuDeviceGetName
+   0.02  0.057081         1  0.057081  0.057081  0.057081  cudaLaunch
+   0.01  0.023871         2  0.011935  1.50e-03  0.022373  cudaEventCreate
+   0.00  0.010754         2  5.38e-03  3.23e-03  7.52e-03  cudaEventRecord
+   0.00  0.010712         1  0.010712  0.010712  0.010712  cudaSetDevice
+   0.00  5.19e-03         8  6.48e-04  5.93e-04  7.71e-04  cuDeviceGet
+   0.00  4.81e-03         4  1.20e-03  5.73e-04  2.42e-03  cudaSetupArgument
+   0.00  4.25e-03         1  4.25e-03  4.25e-03  4.25e-03  cudaEventElapsedTime
+   0.00  3.14e-03         2  1.57e-03  9.62e-04  2.18e-03  cuDeviceGetCount
+   0.00  2.84e-03         1  2.84e-03  2.84e-03  2.84e-03  cudaConfigureCall
+==3595== NVPROF is profiling process 3595, command: ./SubSeqMax 33554432 1
+==3595== Profiling application: ./SubSeqMax 33554432 1
+==3595== Profiling result:
+Time(%)      Time     Calls       Avg       Min       Max  Name
+      %        ms                  ms        ms        ms  
+  67.17  41.21590         1  41.21590  41.21590  41.21590  [CUDA memcpy HtoD]
+  32.82  20.13794         1  20.13794  20.13794  20.13794  subSeqMax(int*, int*, int, int)
+   0.01  3.10e-03         1  3.10e-03  3.10e-03  3.10e-03  [CUDA memcpy DtoH]
+
+==3595== API calls:
+Time(%)      Time     Calls       Avg       Min       Max  Name
+      %        ms                  ms        ms        ms  
+  83.44  329.0098         2  164.5049  0.135312  328.8745  cudaMalloc
+  10.65  41.99359         2  20.99680  0.040745  41.95285  cudaMemcpy
+   5.11  20.14590         1  20.14590  20.14590  20.14590  cudaEventSynchronize
+   0.46  1.823028       332  5.49e-03  5.47e-04  0.189296  cuDeviceGetAttribute
+   0.11  0.429510         2  0.214755  0.193123  0.236387  cudaFree
+   0.11  0.415548         1  0.415548  0.415548  0.415548  cudaGetDeviceProperties
+   0.05  0.208599         4  0.052149  0.050013  0.055224  cuDeviceTotalMem
+   0.04  0.163213         4  0.040803  0.036937  0.043569  cuDeviceGetName
+   0.01  0.052414         1  0.052414  0.052414  0.052414  cudaLaunch
+   0.01  0.020028         2  0.010014  2.08e-03  0.017946  cudaEventCreate
+   0.00  0.010549         2  5.27e-03  3.92e-03  6.62e-03  cudaEventRecord
+   0.00  9.97e-03         1  9.97e-03  9.97e-03  9.97e-03  cudaSetDevice
+   0.00  7.27e-03         8  9.08e-04  5.88e-04  2.59e-03  cuDeviceGet
+   0.00  5.13e-03         4  1.28e-03  5.76e-04  2.77e-03  cudaSetupArgument
+   0.00  3.67e-03         1  3.67e-03  3.67e-03  3.67e-03  cudaEventElapsedTime
+   0.00  2.76e-03         2  1.38e-03  6.52e-04  2.10e-03  cuDeviceGetCount
+   0.00  2.69e-03         1  2.69e-03  2.69e-03  2.69e-03  cudaConfigureCall
+==3604== NVPROF is profiling process 3604, command: ./SubSeqMax 67108864 1
+==3604== Profiling application: ./SubSeqMax 67108864 1
+==3604== Profiling result:
+Time(%)      Time     Calls       Avg       Min       Max  Name
+      %        ms                  ms        ms        ms  
+  67.12  82.25087         1  82.25087  82.25087  82.25087  [CUDA memcpy HtoD]
+  32.88  40.28862         1  40.28862  40.28862  40.28862  subSeqMax(int*, int*, int, int)
+   0.00  3.10e-03         1  3.10e-03  3.10e-03  3.10e-03  [CUDA memcpy DtoH]
+
+==3604== API calls:
+Time(%)      Time     Calls       Avg       Min       Max  Name
+      %        ms                  ms        ms        ms  
+  72.11  325.8802         2  162.9401  0.125978  325.7542  cudaMalloc
+  18.26  82.52830         2  41.26415  0.048456  82.47985  cudaMemcpy
+   8.92  40.29192         1  40.29192  40.29192  40.29192  cudaEventSynchronize
+   0.39  1.763412       332  5.31e-03  5.51e-04  0.182272  cuDeviceGetAttribute
+   0.13  0.578036         2  0.289018  0.249465  0.328571  cudaFree
+   0.09  0.393755         1  0.393755  0.393755  0.393755  cudaGetDeviceProperties
+   0.05  0.205034         4  0.051258  0.046415  0.054486  cuDeviceTotalMem
+   0.03  0.156979         4  0.039244  0.037454  0.040996  cuDeviceGetName
+   0.02  0.080919         1  0.080919  0.080919  0.080919  cudaLaunch
+   0.01  0.025912         2  0.012956  1.57e-03  0.024340  cudaEventCreate
+   0.00  0.010759         1  0.010759  0.010759  0.010759  cudaSetDevice
+   0.00  9.91e-03         2  4.96e-03  3.11e-03  6.80e-03  cudaEventRecord
+   0.00  5.40e-03         8  6.75e-04  5.69e-04  1.02e-03  cuDeviceGet
+   0.00  4.22e-03         4  1.06e-03  5.76e-04  2.03e-03  cudaSetupArgument
+   0.00  3.74e-03         1  3.74e-03  3.74e-03  3.74e-03  cudaEventElapsedTime
+   0.00  2.85e-03         1  2.85e-03  2.85e-03  2.85e-03  cudaConfigureCall
+   0.00  2.60e-03         2  1.30e-03  7.57e-04  1.84e-03  cuDeviceGetCount
+==3613== NVPROF is profiling process 3613, command: ./SubSeqMax 134217728 1
+==3613== Profiling application: ./SubSeqMax 134217728 1
+==3613== Profiling result:
+Time(%)      Time     Calls       Avg       Min       Max  Name
+      %        ms                  ms        ms        ms  
+  80.64  337.1269         1  337.1269  337.1269  337.1269  [CUDA memcpy HtoD]
+  19.36  80.95971         1  80.95971  80.95971  80.95971  subSeqMax(int*, int*, int, int)
+   0.00  3.20e-03         1  3.20e-03  3.20e-03  3.20e-03  [CUDA memcpy DtoH]
+
+==3613== API calls:
+Time(%)      Time     Calls       Avg       Min       Max  Name
+      %        ms                  ms        ms        ms  
+  45.84  338.3815         2  169.1907  0.044058  338.3374  cudaMemcpy
+  42.75  315.5484         2  157.7742  0.140106  315.4083  cudaMalloc
+  10.97  80.96654         1  80.96654  80.96654  80.96654  cudaEventSynchronize
+   0.24  1.763344       332  5.31e-03  5.41e-04  0.183244  cuDeviceGetAttribute
+   0.09  0.655550         2  0.327775  0.288230  0.367320  cudaFree
+   0.05  0.398017         1  0.398017  0.398017  0.398017  cudaGetDeviceProperties
+   0.03  0.202899         4  0.050724  0.047252  0.054278  cuDeviceTotalMem
+   0.02  0.160733         4  0.040183  0.038452  0.042110  cuDeviceGetName
+   0.01  0.071140         1  0.071140  0.071140  0.071140  cudaLaunch
+   0.00  0.020869         2  0.010434  1.86e-03  0.019007  cudaEventCreate
+   0.00  0.010071         2  5.04e-03  3.41e-03  6.66e-03  cudaEventRecord
+   0.00  9.61e-03         1  9.61e-03  9.61e-03  9.61e-03  cudaSetDevice
+   0.00  6.94e-03         8  8.67e-04  5.66e-04  2.19e-03  cuDeviceGet
+   0.00  5.28e-03         4  1.32e-03  5.67e-04  2.97e-03  cudaSetupArgument
+   0.00  3.98e-03         1  3.98e-03  3.98e-03  3.98e-03  cudaEventElapsedTime
+   0.00  2.89e-03         2  1.45e-03  7.66e-04  2.13e-03  cuDeviceGetCount
+   0.00  2.71e-03         1  2.71e-03  2.71e-03  2.71e-03  cudaConfigureCall
+==3622== NVPROF is profiling process 3622, command: ./SubSeqMax 268435456 1
+==3622== Profiling application: ./SubSeqMax 268435456 1
+==3622== Profiling result:
+Time(%)      Time     Calls       Avg       Min       Max  Name
+      %        ms                  ms        ms        ms  
+  74.87  489.5955         1  489.5955  489.5955  489.5955  [CUDA memcpy HtoD]
+  25.13  164.3244         1  164.3244  164.3244  164.3244  subSeqMax(int*, int*, int, int)
+   0.00  3.07e-03         1  3.07e-03  3.07e-03  3.07e-03  [CUDA memcpy DtoH]
+
+==3622== API calls:
+Time(%)      Time     Calls       Avg       Min       Max  Name
+      %        ms                  ms        ms        ms  
+  50.55  491.8003         2  245.9001  0.051972  491.7483  cudaMemcpy
+  32.20  313.2765         2  156.6382  0.130413  313.1461  cudaMalloc
+  16.89  164.3330         1  164.3330  164.3330  164.3330  cudaEventSynchronize
+   0.18  1.785116       332  5.38e-03  5.41e-04  0.197159  cuDeviceGetAttribute
+   0.08  0.823780         2  0.411890  0.239503  0.584277  cudaFree
+   0.04  0.394304         1  0.394304  0.394304  0.394304  cudaGetDeviceProperties
+   0.02  0.200769         4  0.050192  0.046893  0.053797  cuDeviceTotalMem
+   0.02  0.157188         4  0.039297  0.037155  0.041790  cuDeviceGetName
+   0.01  0.055783         1  0.055783  0.055783  0.055783  cudaLaunch
+   0.00  0.023759         2  0.011879  1.51e-03  0.022244  cudaEventCreate
+   0.00  0.010656         1  0.010656  0.010656  0.010656  cudaSetDevice
+   0.00  0.010163         2  5.08e-03  3.19e-03  6.97e-03  cudaEventRecord
+   0.00  5.29e-03         8  6.61e-04  5.68e-04  9.52e-04  cuDeviceGet
+   0.00  5.09e-03         4  1.27e-03  5.70e-04  2.76e-03  cudaSetupArgument
+   0.00  4.90e-03         1  4.90e-03  4.90e-03  4.90e-03  cudaEventElapsedTime
+   0.00  2.82e-03         1  2.82e-03  2.82e-03  2.82e-03  cudaConfigureCall
+   0.00  2.76e-03         2  1.38e-03  7.36e-04  2.02e-03  cuDeviceGetCount

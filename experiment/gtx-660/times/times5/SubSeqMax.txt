@@ -1,0 +1,84 @@
+==3092== NVPROF is profiling process 3092, command: ./SubSeqMax 131072 0
+==3092== Profiling application: ./SubSeqMax 131072 0
+==3092== Profiling result:
+Time(%)      Time     Calls       Avg       Min       Max  Name
+      %        ms                  ms        ms        ms  
+  66.00  0.161152         1  0.161152  0.161152  0.161152  subSeqMax(int*, int*, int, int)
+  34.00  0.083008         1  0.083008  0.083008  0.083008  [CUDA memcpy HtoD]
+==3107== NVPROF is profiling process 3107, command: ./SubSeqMax 262144 0
+==3107== Profiling application: ./SubSeqMax 262144 0
+==3107== Profiling result:
+Time(%)      Time     Calls       Avg       Min       Max  Name
+      %        ms                  ms        ms        ms  
+  63.69  0.288352         1  0.288352  0.288352  0.288352  subSeqMax(int*, int*, int, int)
+  36.31  0.164384         1  0.164384  0.164384  0.164384  [CUDA memcpy HtoD]
+==3129== NVPROF is profiling process 3129, command: ./SubSeqMax 524288 0
+==3129== Profiling application: ./SubSeqMax 524288 0
+==3129== Profiling result:
+Time(%)      Time     Calls       Avg       Min       Max  Name
+      %        ms                  ms        ms        ms  
+  59.69  0.543520         1  0.543520  0.543520  0.543520  subSeqMax(int*, int*, int, int)
+  40.31  0.367040         1  0.367040  0.367040  0.367040  [CUDA memcpy HtoD]
+==3140== NVPROF is profiling process 3140, command: ./SubSeqMax 1048576 0
+==3140== Profiling application: ./SubSeqMax 1048576 0
+==3140== Profiling result:
+Time(%)      Time     Calls       Avg       Min       Max  Name
+      %        ms                  ms        ms        ms  
+  58.99  1.052192         1  1.052192  1.052192  1.052192  subSeqMax(int*, int*, int, int)
+  41.01  0.731360         1  0.731360  0.731360  0.731360  [CUDA memcpy HtoD]
+==3150== NVPROF is profiling process 3150, command: ./SubSeqMax 2097152 0
+==3150== Profiling application: ./SubSeqMax 2097152 0
+==3150== Profiling result:
+Time(%)      Time     Calls       Avg       Min       Max  Name
+      %        ms                  ms        ms        ms  
+  58.95  2.054080         1  2.054080  2.054080  2.054080  subSeqMax(int*, int*, int, int)
+  41.05  1.430528         1  1.430528  1.430528  1.430528  [CUDA memcpy HtoD]
+==3160== NVPROF is profiling process 3160, command: ./SubSeqMax 4194304 0
+==3160== Profiling application: ./SubSeqMax 4194304 0
+==3160== Profiling result:
+Time(%)      Time     Calls       Avg       Min       Max  Name
+      %        ms                  ms        ms        ms  
+  58.84  4.099072         1  4.099072  4.099072  4.099072  subSeqMax(int*, int*, int, int)
+  41.16  2.866944         1  2.866944  2.866944  2.866944  [CUDA memcpy HtoD]
+==3170== NVPROF is profiling process 3170, command: ./SubSeqMax 8388608 0
+==3170== Profiling application: ./SubSeqMax 8388608 0
+==3170== Profiling result:
+Time(%)      Time     Calls       Avg       Min       Max  Name
+      %        ms                  ms        ms        ms  
+  58.93  8.114784         1  8.114784  8.114784  8.114784  subSeqMax(int*, int*, int, int)
+  41.07  5.655808         1  5.655808  5.655808  5.655808  [CUDA memcpy HtoD]
+==3180== NVPROF is profiling process 3180, command: ./SubSeqMax 16777216 0
+==3180== Profiling application: ./SubSeqMax 16777216 0
+==3180== Profiling result:
+Time(%)      Time     Calls       Avg       Min       Max  Name
+      %        ms                  ms        ms        ms  
+  59.10  16.32342         1  16.32342  16.32342  16.32342  subSeqMax(int*, int*, int, int)
+  40.90  11.29882         1  11.29882  11.29882  11.29882  [CUDA memcpy HtoD]
+==3190== NVPROF is profiling process 3190, command: ./SubSeqMax 33554432 0
+==3190== Profiling application: ./SubSeqMax 33554432 0
+==3190== Profiling result:
+Time(%)      Time     Calls       Avg       Min       Max  Name
+      %        ms                  ms        ms        ms  
+  59.30  32.66192         1  32.66192  32.66192  32.66192  subSeqMax(int*, int*, int, int)
+  40.70  22.41536         1  22.41536  22.41536  22.41536  [CUDA memcpy HtoD]
+==3200== NVPROF is profiling process 3200, command: ./SubSeqMax 67108864 0
+==3200== Profiling application: ./SubSeqMax 67108864 0
+==3200== Profiling result:
+Time(%)      Time     Calls       Avg       Min       Max  Name
+      %        ms                  ms        ms        ms  
+  59.34  65.56995         1  65.56995  65.56995  65.56995  subSeqMax(int*, int*, int, int)
+  40.66  44.92621         1  44.92621  44.92621  44.92621  [CUDA memcpy HtoD]
+==3210== NVPROF is profiling process 3210, command: ./SubSeqMax 134217728 0
+==3210== Profiling application: ./SubSeqMax 134217728 0
+==3210== Profiling result:
+Time(%)      Time     Calls       Avg       Min       Max  Name
+      %        ms                  ms        ms        ms  
+  59.49  131.1137         1  131.1137  131.1137  131.1137  subSeqMax(int*, int*, int, int)
+  40.51  89.29731         1  89.29731  89.29731  89.29731  [CUDA memcpy HtoD]
+==3220== NVPROF is profiling process 3220, command: ./SubSeqMax 268435456 0
+==3220== Profiling application: ./SubSeqMax 268435456 0
+==3220== Profiling result:
+Time(%)      Time     Calls       Avg       Min       Max  Name
+      %        ms                  ms        ms        ms  
+  59.40  262.1920         1  262.1920  262.1920  262.1920  subSeqMax(int*, int*, int, int)
+  40.60  179.2102         1  179.2102  179.2102  179.2102  [CUDA memcpy HtoD]

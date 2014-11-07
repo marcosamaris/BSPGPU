@@ -1,0 +1,64 @@
+==18722== NVPROF is profiling process 18722, command: ./matSum-gpu-Un 128 8 0
+==18722== Profiling application: ./matSum-gpu-Un 128 8 0
+==18722== Profiling result:
+Time(%)      Time     Calls       Avg       Min       Max  Name
+      %        ms                  ms        ms        ms  
+  56.07  0.021728         2  0.010864  0.010496  0.011232  [CUDA memcpy HtoD]
+  31.54  0.012224         1  0.012224  0.012224  0.012224  [CUDA memcpy DtoH]
+  12.39  4.80e-03         1  4.80e-03  4.80e-03  4.80e-03  matSum(float*, float*, float*, int)
+==18732== NVPROF is profiling process 18732, command: ./matSum-gpu-Un 256 8 0
+==18732== Profiling application: ./matSum-gpu-Un 256 8 0
+==18732== Profiling result:
+Time(%)      Time     Calls       Avg       Min       Max  Name
+      %        ms                  ms        ms        ms  
+  63.49  0.091168         2  0.045584  0.045312  0.045856  [CUDA memcpy HtoD]
+  28.79  0.041344         1  0.041344  0.041344  0.041344  [CUDA memcpy DtoH]
+   7.71  0.011072         1  0.011072  0.011072  0.011072  matSum(float*, float*, float*, int)
+==18742== NVPROF is profiling process 18742, command: ./matSum-gpu-Un 512 8 0
+==18742== Profiling application: ./matSum-gpu-Un 512 8 0
+==18742== Profiling result:
+Time(%)      Time     Calls       Avg       Min       Max  Name
+      %        ms                  ms        ms        ms  
+  64.18  0.352416         2  0.176208  0.176096  0.176320  [CUDA memcpy HtoD]
+  28.87  0.158528         1  0.158528  0.158528  0.158528  [CUDA memcpy DtoH]
+   6.95  0.038144         1  0.038144  0.038144  0.038144  matSum(float*, float*, float*, int)
+==18752== NVPROF is profiling process 18752, command: ./matSum-gpu-Un 1024 8 0
+==18752== Profiling application: ./matSum-gpu-Un 1024 8 0
+==18752== Profiling result:
+Time(%)      Time     Calls       Avg       Min       Max  Name
+      %        ms                  ms        ms        ms  
+  61.61  2.756608         2  1.378304  1.281664  1.474944  [CUDA memcpy HtoD]
+  35.04  1.567840         1  1.567840  1.567840  1.567840  [CUDA memcpy DtoH]
+   3.35  0.149856         1  0.149856  0.149856  0.149856  matSum(float*, float*, float*, int)
+==18762== NVPROF is profiling process 18762, command: ./matSum-gpu-Un 2048 8 0
+==18762== Profiling application: ./matSum-gpu-Un 2048 8 0
+==18762== Profiling result:
+Time(%)      Time     Calls       Avg       Min       Max  Name
+      %        ms                  ms        ms        ms  
+  51.82  7.952064         2  3.976032  2.897728  5.054336  [CUDA memcpy HtoD]
+  44.41  6.814336         1  6.814336  6.814336  6.814336  [CUDA memcpy DtoH]
+   3.77  0.577952         1  0.577952  0.577952  0.577952  matSum(float*, float*, float*, int)
+==18772== NVPROF is profiling process 18772, command: ./matSum-gpu-Un 4096 8 0
+==18772== Profiling application: ./matSum-gpu-Un 4096 8 0
+==18772== Profiling result:
+Time(%)      Time     Calls       Avg       Min       Max  Name
+      %        ms                  ms        ms        ms  
+  48.26  29.10198         2  14.55099  11.61168  17.49030  [CUDA memcpy HtoD]
+  47.64  28.72758         1  28.72758  28.72758  28.72758  [CUDA memcpy DtoH]
+   4.10  2.469312         1  2.469312  2.469312  2.469312  matSum(float*, float*, float*, int)
+==18782== NVPROF is profiling process 18782, command: ./matSum-gpu-Un 8192 8 0
+==18782== Profiling application: ./matSum-gpu-Un 8192 8 0
+==18782== Profiling result:
+Time(%)      Time     Calls       Avg       Min       Max  Name
+      %        ms                  ms        ms        ms  
+  50.57  110.2539         1  110.2539  110.2539  110.2539  [CUDA memcpy DtoH]
+  42.74  93.17840         2  46.58920  46.57501  46.60339  [CUDA memcpy HtoD]
+   6.69  14.57971         1  14.57971  14.57971  14.57971  matSum(float*, float*, float*, int)
+==18793== NVPROF is profiling process 18793, command: ./matSum-gpu-Un 16384 8 0
+==18793== Profiling application: ./matSum-gpu-Un 16384 8 0
+==18793== Profiling result:
+Time(%)      Time     Calls       Avg       Min       Max  Name
+      %        ms                  ms        ms        ms  
+  44.02  428.8796         1  428.8796  428.8796  428.8796  [CUDA memcpy DtoH]
+  38.88  378.7405         2  189.3702  186.5669  192.1736  [CUDA memcpy HtoD]
+  17.10  166.6148         1  166.6148  166.6148  166.6148  matSum(float*, float*, float*, int)
