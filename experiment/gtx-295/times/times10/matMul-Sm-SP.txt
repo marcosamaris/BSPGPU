@@ -1,0 +1,51 @@
+==6269== NVPROF is profiling process 6269, command: ./matMul-Sm 128 3
+==6269== Profiling application: ./matMul-Sm 128 3
+==6269== Profiling result:
+Time(%)      Time     Calls       Avg       Min       Max  Name
+      %        ms                  ms        ms        ms  
+  63.23  0.065216         2  0.032608  0.032320  0.032896  [CUDA memcpy HtoD]
+  36.77  0.037920         1  0.037920  0.037920  0.037920  matMul(float*, float*, float*, int)
+==6279== NVPROF is profiling process 6279, command: ./matMul-Sm 256 3
+==6279== Profiling application: ./matMul-Sm 256 3
+==6279== Profiling result:
+Time(%)      Time     Calls       Avg       Min       Max  Name
+      %        ms                  ms        ms        ms  
+  68.34  0.210048         1  0.210048  0.210048  0.210048  matMul(float*, float*, float*, int)
+  31.66  0.097312         2  0.048656  0.048352  0.048960  [CUDA memcpy HtoD]
+==6289== NVPROF is profiling process 6289, command: ./matMul-Sm 512 3
+==6289== Profiling application: ./matMul-Sm 512 3
+==6289== Profiling result:
+Time(%)      Time     Calls       Avg       Min       Max  Name
+      %        ms                  ms        ms        ms  
+  80.46  1.475584         1  1.475584  1.475584  1.475584  matMul(float*, float*, float*, int)
+  19.54  0.358304         2  0.179152  0.178976  0.179328  [CUDA memcpy HtoD]
+==6299== NVPROF is profiling process 6299, command: ./matMul-Sm 1024 3
+==6299== Profiling application: ./matMul-Sm 1024 3
+==6299== Profiling result:
+Time(%)      Time     Calls       Avg       Min       Max  Name
+      %        ms                  ms        ms        ms  
+  88.27  11.40912         1  11.40912  11.40912  11.40912  matMul(float*, float*, float*, int)
+  11.73  1.516832         2  0.758416  0.744768  0.772064  [CUDA memcpy HtoD]
+==6309== NVPROF is profiling process 6309, command: ./matMul-Sm 2048 3
+==6309== Profiling application: ./matMul-Sm 2048 3
+==6309== Profiling result:
+Time(%)      Time     Calls       Avg       Min       Max  Name
+      %        ms                  ms        ms        ms  
+  93.78  90.42038         1  90.42038  90.42038  90.42038  matMul(float*, float*, float*, int)
+   6.22  5.993984         2  2.996992  2.955328  3.038656  [CUDA memcpy HtoD]
+==6319== NVPROF is profiling process 6319, command: ./matMul-Sm 4096 3
+==6319== Profiling application: ./matMul-Sm 4096 3
+==6319== Profiling result:
+Time(%)      Time     Calls       Avg       Min       Max  Name
+      %        ms                  ms        ms        ms  
+  96.86  721.7458         1  721.7458  721.7458  721.7458  matMul(float*, float*, float*, int)
+   3.14  23.41507         2  11.70754  11.68198  11.73309  [CUDA memcpy HtoD]
+==6329== NVPROF is profiling process 6329, command: ./matMul-Sm 8192 3
+==6329== Profiling application: ./matMul-Sm 8192 3
+==6329== Profiling result:
+Time(%)      Time     Calls       Avg       Min       Max  Name
+      %        ms                  ms        ms        ms  
+  98.40  5.80e+03         1  5.80e+03  5.80e+03  5.80e+03  matMul(float*, float*, float*, int)
+   1.60  94.20121         2  47.10061  47.09701  47.10421  [CUDA memcpy HtoD]
+==6339== NVPROF is profiling process 6339, command: ./matMul-Sm 16384 3
+==6339== Error: Internal profiling error 1749:999.

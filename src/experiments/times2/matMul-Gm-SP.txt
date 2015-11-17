@@ -1,0 +1,20 @@
+======== Error: Encountered invalid option : X
+======== Use "nvprof --help" to get more information.
+======== Error: Encountered invalid option : X
+======== Use "nvprof --help" to get more information.
+======== Error: Encountered invalid option : X
+======== Use "nvprof --help" to get more information.
+======== Error: Encountered invalid option : X
+======== Use "nvprof --help" to get more information.
+======== Error: Encountered invalid option : X
+======== Use "nvprof --help" to get more information.
+======== Error: Encountered invalid option : X
+======== Use "nvprof --help" to get more information.
+======== Error: Encountered invalid option : X
+======== Use "nvprof --help" to get more information.
+======== Error: Encountered invalid option : X
+======== Use "nvprof --help" to get more information.
+======== Error: Encountered invalid option : X
+======== Use "nvprof --help" to get more information.
+======== Error: Encountered invalid option : X
+======== Use "nvprof --help" to get more information.

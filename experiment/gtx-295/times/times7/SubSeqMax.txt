@@ -1,0 +1,70 @@
+==2716== NVPROF is profiling process 2716, command: ./SubSeqMax 131072 3
+==2716== Profiling application: ./SubSeqMax 131072 3
+==2716== Profiling result:
+Time(%)      Time     Calls       Avg       Min       Max  Name
+      %        ms                  ms        ms        ms  
+ 100.00  0.093312         1  0.093312  0.093312  0.093312  [CUDA memcpy HtoD]
+==2726== NVPROF is profiling process 2726, command: ./SubSeqMax 262144 3
+==2726== Profiling application: ./SubSeqMax 262144 3
+==2726== Profiling result:
+Time(%)      Time     Calls       Avg       Min       Max  Name
+      %        ms                  ms        ms        ms  
+ 100.00  0.179840         1  0.179840  0.179840  0.179840  [CUDA memcpy HtoD]
+==2736== NVPROF is profiling process 2736, command: ./SubSeqMax 524288 3
+==2736== Profiling application: ./SubSeqMax 524288 3
+==2736== Profiling result:
+Time(%)      Time     Calls       Avg       Min       Max  Name
+      %        ms                  ms        ms        ms  
+ 100.00  0.404832         1  0.404832  0.404832  0.404832  [CUDA memcpy HtoD]
+==2746== NVPROF is profiling process 2746, command: ./SubSeqMax 1048576 3
+==2746== Profiling application: ./SubSeqMax 1048576 3
+==2746== Profiling result:
+Time(%)      Time     Calls       Avg       Min       Max  Name
+      %        ms                  ms        ms        ms  
+ 100.00  0.771040         1  0.771040  0.771040  0.771040  [CUDA memcpy HtoD]
+==2756== NVPROF is profiling process 2756, command: ./SubSeqMax 2097152 3
+==2756== Profiling application: ./SubSeqMax 2097152 3
+==2756== Profiling result:
+Time(%)      Time     Calls       Avg       Min       Max  Name
+      %        ms                  ms        ms        ms  
+ 100.00  1.539552         1  1.539552  1.539552  1.539552  [CUDA memcpy HtoD]
+==2766== NVPROF is profiling process 2766, command: ./SubSeqMax 4194304 3
+==2766== Profiling application: ./SubSeqMax 4194304 3
+==2766== Profiling result:
+Time(%)      Time     Calls       Avg       Min       Max  Name
+      %        ms                  ms        ms        ms  
+ 100.00  3.023904         1  3.023904  3.023904  3.023904  [CUDA memcpy HtoD]
+==2776== NVPROF is profiling process 2776, command: ./SubSeqMax 8388608 3
+==2776== Profiling application: ./SubSeqMax 8388608 3
+==2776== Profiling result:
+Time(%)      Time     Calls       Avg       Min       Max  Name
+      %        ms                  ms        ms        ms  
+ 100.00  5.984000         1  5.984000  5.984000  5.984000  [CUDA memcpy HtoD]
+==2786== NVPROF is profiling process 2786, command: ./SubSeqMax 16777216 3
+==2786== Profiling application: ./SubSeqMax 16777216 3
+==2786== Profiling result:
+Time(%)      Time     Calls       Avg       Min       Max  Name
+      %        ms                  ms        ms        ms  
+ 100.00  12.18557         1  12.18557  12.18557  12.18557  [CUDA memcpy HtoD]
+==2796== NVPROF is profiling process 2796, command: ./SubSeqMax 33554432 3
+==2796== Profiling application: ./SubSeqMax 33554432 3
+==2796== Profiling result:
+Time(%)      Time     Calls       Avg       Min       Max  Name
+      %        ms                  ms        ms        ms  
+ 100.00  23.97984         1  23.97984  23.97984  23.97984  [CUDA memcpy HtoD]
+==2806== NVPROF is profiling process 2806, command: ./SubSeqMax 67108864 3
+==2806== Profiling application: ./SubSeqMax 67108864 3
+==2806== Profiling result:
+Time(%)      Time     Calls       Avg       Min       Max  Name
+      %        ms                  ms        ms        ms  
+ 100.00  48.53622         1  48.53622  48.53622  48.53622  [CUDA memcpy HtoD]
+==2816== NVPROF is profiling process 2816, command: ./SubSeqMax 134217728 3
+==2816== Profiling application: ./SubSeqMax 134217728 3
+==2816== Profiling result:
+Time(%)      Time     Calls       Avg       Min       Max  Name
+      %        ms                  ms        ms        ms  
+ 100.00  94.84099         1  94.84099  94.84099  94.84099  [CUDA memcpy HtoD]
+==2826== NVPROF is profiling process 2826, command: ./SubSeqMax 268435456 3
+==2826== Profiling application: ./SubSeqMax 268435456 3
+==2826== Profiling result:
+No kernels were profiled.
