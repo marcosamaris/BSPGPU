@@ -2,7 +2,7 @@
 A Simple BSP-based Model to Predict Execution Time in GPU Applications
 ======
 Authors: Marcos Amarís, Daniel Cordeiro, Alfredo Goldman and Raphael Camargo
-======
+===
 
 Models are useful to represent abstractions of software and hardware processes. The Bulk Synchronous Parallel (BSP) is a bridging model for parallel computation that allows algorithmic analysis of programs on parallel computers using performance modeling. The main idea of BSP model is the treatment of communication and computation as abstractions of a parallel system. Meanwhile, the use of GPU devices are becoming more widespread and they are currently capable of performing efficient parallel computation for applications that can be decomposed on thousands of simple threads. However, few models for predicting application execution time on GPUs have been proposed.
 
